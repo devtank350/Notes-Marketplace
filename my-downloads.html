@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--important meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 ,user-scalable=no">
+
+    <!--Title-->
+    <title>Notes Marketplace</title>
+
+    <!--Basic Ceo-->
+    <meta name="description" content="Creative Website Development with html5, css3. jquery &bootstrap frameworks">
+    <meta name="keywords" content="HML5, CSS3, JQuery, Web Development, Responsive Website, Creative Website">
+
+    <!--Facicon-->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <!--Bootstap CSS-->
+    <link rel="stylesheet" href="css/bootstarp/bootstrap.css">
+    <!--Owl-Carousel Css-->
+    <!--    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">-->
+    <!--    <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">-->
+    <!--Responsive-tabs-css-->
+    <!--    <link rel="stylesheet" href="css/responsive-tabs/5.2%20responsive-tabs.min.css.css">-->
+    <!--Magnific _popup css-->
+    <!--    <link rel="stylesheet" href="css/magnific-popup/magnific-popup.min.css.css">-->
+    <!--Animate Css-->
+    <!--    <link rel="stylesheet" href="css/animate/animatee.min.css">-->
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Responsive Css-->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <!-- Add Review Modal-->
+    <div class="modal fade modal-download" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModallabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="row">
+                <div class="co-xl-12">
+                    <div class="modal-content add-review">
+
+                        <div class="modal-header">
+                            <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <i class="fa fa-close 2x"></i>
+                            </a>
+                        </div>
+                        <div class="modal-data">
+                            <div class="modal-head text-left">
+                                <h2 class="set-text">Add Review</h2>
+                            </div>
+                            <div class="middle-content text-left content-justify-left">
+                                <div class="row set-rate">
+                                    <div class="col-md-12">
+                                        <div class="rate">
+                                            <input type="radio" id="star5" name="rate" value="5" />
+                                            <label for="star5" title="text">5 Stars</label>
+                                            <input type="radio" id="star4" name="rate" value="4" />
+                                            <label for="star4" title="text">4 Stars</label>
+                                            <input type="radio" id="star3" name="rate" value="3" />
+                                            <label for="star3" title="text">3 Stars</label>
+                                            <input type="radio" id="star2" name="rate" value="2" />
+                                            <label for="star2" title="text">2 Stars</label>
+                                            <input type="radio" id="star1" name="rate" value="1" />
+                                            <label for="star1" title="text">1 Stars</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="textarea-input">
+                                                <label class="control-label set-label">
+                                                    Comments<span class="required">*</span>
+                                                </label>
+                                                <textarea placeholder="Comments..." class="form-control" id="text-ar-1">
+
+                                        </textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn btn-primary text-uppercase text-center" id="mybt">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Header-->
+    <header id="header-d">
+        <div class="navbar-header">
+            <!--Mobile Menu OpenButton-->
+            <span id="mobile-nav-open-btn">&#9776;</span>
+            <a class="smooth-scroll navbar-brand1" href="#home">
+                <img src="images/pre-login/logo.png" alt="logo" id="header-d-imglogo">
+            </a>
+        </div>
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="search.html" class="smooth-scroll">Search Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Sell You Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Buyer Requests</a></li>
+                    <li><a href="#team" class="smooth-scroll">FAQs</a></li>
+                    <li><a href="#contact" class="smooth-scroll">Contact Us</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="images/Dashboard/user-img.png" class="img-circle" id="header-img">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">My Profile</a><br>
+                                <a class="dropdown-item" href="#">My Downloads</a><br>
+                                <a class="dropdown-item" href="#">My Sold Notes</a><br>
+                                <a class="dropdown-item" href="#">My Rejected Notes</a><br>
+                                <a class="dropdown-item" href="#">Change Password</a><br>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#services" class="smooth-scroll"><button type="button" class="btn btn-primary" id="header-bt">LOGOUT</button></a></li>
+                </ul>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur a neque perferendis provident asperiores, quidem in recusandae eligendi nesciunt, sunt iste harum nobis iure autem quod esse accusamus, expedita molestias.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-nav">
+            <span id="mobile-nav-close-btn">
+                &times;
+            </span>
+            <div id='mobile-nav-content'>
+                <ul class="nav">
+                    <li><a href="search.html" class="smooth-scroll">Search Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Sell You Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Buyer Requests</a></li>
+                    <li><a href="#team" class="smooth-scroll">FAQs</a></li>
+                    <li><a href="#contact" class="smooth-scroll">Contact Us</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="images/Dashboard/user-img.png" class="img-circle" id="header-img">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">My Profile</a><br>
+                                <a class="dropdown-item" href="#">My Downloads</a><br>
+                                <a class="dropdown-item" href="#">My Sold Notes</a><br>
+                                <a class="dropdown-item" href="#">My Rejected Notes</a><br>
+                                <a class="dropdown-item" href="#">Change Password</a><br>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#services" class="smooth-scroll"><button type="button" class="btn btn-primary" id="header-bt">LOGOUT</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="download" class="mainmydownloads">
+        <div class="content-box-lg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-md-4 col-sm-4 col-xs-12 mydnlds">
+                            <h3>My Downloads</h3>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 mydnlds1" id="rightflow">
+                            <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control search1" aria-describedby="textHelp" placeholder="Search..."></div>
+                            <div class="col-md-6 col-md-6 col-xs-12"><button type="button" class="btn btn-primary" id="dash-btn">SEARCH</button></div>
+                        </div>
+                        <div class="form-popup" id="myForm">
+                            <form action="/action_page.php" class="form-container">
+                                <h1>Login</h1>
+
+                                <label for="email"><b>Email</b></label>
+                                <input type="text" placeholder="Enter Email" name="email" required>
+
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                <button type="submit" class="btn">Login</button>
+                                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                            </form>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12" style="overflow-x: auto;">
+                        <table>
+                            <tr>
+                                <th>SR NO.</th>
+                                <th>NOTE TITLE</th>
+                                <th>CATEGORY</th>
+                                <th>BUYER</th>
+                                <th>SELL TYPE</th>
+                                <th>PRICE</th>
+                                <th>DOWNLOADED DATE/TIME</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Data Science</td>
+                                <td>Science</td>
+                                <td>testing@gmail.com</td>
+                                <td>Paid</td>
+                                <td>$250</td>
+                                <td>27 NOV 2020,11:34:34</td>
+                                <td><i class="fa fa-eye"></i>
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Download Notes</a><br>
+                                            <a class="dropdown-item" href="#" type="submit" data-toggle="modal" data-target="#exampleModal">Add Reviews,Feedback</a>
+                                            <a class="dropdown-item" href="#">Report as inappropriate</a><br>
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Account</td>
+                                <td>Commerce</td>
+                                <td>testing@gmail.com</td>
+                                <td>Paid</td>
+                                <td>$250</td>
+                                <td>27 NOV 2020,11:34:34</td>
+                                <td><i class="fa fa-eye"></i>
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Download Notes</a><br>
+                                            <a class="dropdown-item" href="#">ViewMore Details</a><br>
+                                            <a class="dropdown-item" href="#">Unpublish</a><br>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Social Studies</td>
+                                <td>Social</td>
+                                <td>testing@gmail.com</td>
+                                <td>Paid</td>
+                                <td>$250</td>
+                                <td>27 NOV 2020,11:34:34</td>
+                                <td><i class="fa fa-eye"></i>
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Download Notes</a><br>
+                                            <a class="dropdown-item" href="#">ViewMore Details</a><br>
+                                            <a class="dropdown-item" href="#">Unpublish</a><br>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>AI</td>
+                                <td>IT</td>
+                                <td>testing@gmail.com</td>
+                                <td>Paid</td>
+                                <td>$250</td>
+                                <td>27 NOV 2020,11:34:34</td>
+                                <td><i class="fa fa-eye"></i>
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Download Notes</a><br>
+                                            <a class="dropdown-item" href="#">ViewMore Details</a><br>
+                                            <a class="dropdown-item" href="#">Unpublish</a><br>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Data Science</td>
+                                <td>Science</td>
+                                <td>testing@gmail.com</td>
+                                <td>Paid</td>
+                                <td>$250</td>
+                                <td>27 NOV 2020,11:34:34</td>
+                                <td><i class="fa fa-eye"></i>
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Download Notes</a><br>
+                                            <a class="dropdown-item" href="#">ViewMore Details</a><br>
+                                            <a class="dropdown-item" href="#">Unpublish</a><br>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Data Science</td>
+                                <td>Science</td>
+                                <td>testing@gmail.com</td>
+                                <td>Paid</td>
+                                <td>$250</td>
+                                <td>27 NOV 2020,11:34:34</td>
+                                <td><i class="fa fa-eye"></i>
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Download Notes</a><br>
+                                            <a class="dropdown-item" href="#">ViewMore Details</a><br>
+                                            <a class="dropdown-item" href="#">Unpublish</a><br>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Account</td>
+                                <td>Commerce</td>
+                                <td>testing@gmail.com</td>
+                                <td>Paid</td>
+                                <td>$250</td>
+                                <td>27 NOV 2020,11:34:34</td>
+                                <td><i class="fa fa-eye"></i>
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Download Notes</a><br>
+                                            <a class="dropdown-item" href="#">ViewMore Details</a><br>
+                                            <a class="dropdown-item" href="#">Unpublish</a><br>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Social Studies</td>
+                                <td>Social</td>
+                                <td>testing@gmail.com</td>
+                                <td>Paid</td>
+                                <td>$250</td>
+                                <td>27 NOV 2020,11:34:34</td>
+                                <td><i class="fa fa-eye"></i>
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Download Notes</a><br>
+                                            <a class="dropdown-item" href="#">ViewMore Details</a><br>
+                                            <a class="dropdown-item" href="#">Unpublish</a><br>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>AI</td>
+                                <td>IT</td>
+                                <td>testing@gmail.com</td>
+                                <td>Paid</td>
+                                <td>$250</td>
+                                <td>27 NOV 2020,11:34:34</td>
+                                <td><i class="fa fa-eye"></i>
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Download Notes</a><br>
+                                            <a class="dropdown-item" href="#">ViewMore Details</a><br>
+                                            <a class="dropdown-item" href="#">Unpublish</a><br>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Data Science</td>
+                                <td>Science</td>
+                                <td>testing@gmail.com</td>
+                                <td>Paid</td>
+                                <td>$250</td>
+                                <td>27 NOV 2020,11:34:34</td>
+                                <td><i class="fa fa-eye"></i>
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Download Notes</a><br>
+                                            <a class="dropdown-item" href="#">ViewMore Details</a><br>
+                                            <a class="dropdown-item" href="#">Unpublish</a><br>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-center" id="page">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
+                                <li class="page-item"><a class="page-link" href="#" id="design1">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!--
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+-->
+
+
+    <hr>
+    <footer>
+
+        <div class="row">
+
+            <div class="col-md-6 col-sm-6 col-xs-12 fone">
+                <p class="">
+                    Copyright <i class="fa fa-copyright"></i> TatvaSoft all Rights Reserved.
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 ftwo">
+                <ul class="social-list">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+        
+
+
+
+
+    <!--JQuery-->
+    <script src="js/jquery.js"> </script>
+    <!--Bootstarp JS-->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!--Custom JS-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

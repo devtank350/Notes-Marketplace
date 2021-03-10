@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--important meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 ,user-scalable=no">
+
+    <!--Title-->
+    <title>Notes Marketplace</title>
+
+    <!--Basic Ceo-->
+    <meta name="description" content="Creative Website Development with html5, css3. jquery &bootstrap frameworks">
+    <meta name="keywords" content="HML5, CSS3, JQuery, Web Development, Responsive Website, Creative Website">
+
+    <!--Facicon-->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <!--Bootstap CSS-->
+    <link rel="stylesheet" href="css/bootstarp/bootstrap.min.css">
+    <!--Owl-Carousel Css-->
+    <!--    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">-->
+    <!--    <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">-->
+    <!--Responsive-tabs-css-->
+    <!--    <link rel="stylesheet" href="css/responsive-tabs/5.2%20responsive-tabs.min.css.css">-->
+    <!--Magnific _popup css-->
+    <!--    <link rel="stylesheet" href="css/magnific-popup/magnific-popup.min.css.css">-->
+    <!--Animate Css-->
+    <!--    <link rel="stylesheet" href="css/animate/animatee.min.css">-->
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Responsive Css-->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <!--Header-->
+    <header id="header-d">
+        <div class="navbar-header">
+            <!--Mobile Menu OpenButton-->
+            <span id="mobile-nav-open-btn">&#9776;</span>
+            <a class="smooth-scroll navbar-brand1" href="#home">
+                <img src="images/pre-login/logo.png" alt="logo" id="header-d-imglogo">
+            </a>
+        </div>
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="search.html" class="smooth-scroll">Search Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Sell You Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Buyer Requests</a></li>
+                    <li><a href="#team" class="smooth-scroll">FAQs</a></li>
+                    <li><a href="#contact" class="smooth-scroll">Contact Us</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="images/Dashboard/user-img.png" class="img-circle" id="header-img">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">My Profile</a><br>
+                                <a class="dropdown-item" href="#">My Downloads</a><br>
+                                <a class="dropdown-item" href="#">My Sold Notes</a><br>
+                                <a class="dropdown-item" href="#">My Rejected Notes</a><br>
+                                <a class="dropdown-item" href="#">Change Password</a><br>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#services" class="smooth-scroll"><button type="button" class="btn btn-primary" id="header-bt">LOGOUT</button></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="mobile-nav">
+            <span id="mobile-nav-close-btn">
+                &times;
+            </span>
+            <div id='mobile-nav-content'>
+                <ul class="nav">
+                    <li><a href="search.html" class="smooth-scroll">Search Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Sell You Notes</a></li>
+                    <li><a href="#team" class="smooth-scroll">FAQs</a></li>
+                    <li><a href="#contact" class="smooth-scroll">Contact Us</a></li>
+                    <li><a href="#services" class="smooth-scroll"><button type="button" class="btn btn-primary search-btn">LOGIN</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="add-n">
+        <div class="content-box-md">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 bgtext">
+                        <p class="text-center">Add Notes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="basic-nd">
+            <p id="basic-note-details">Basic Note Details</p>
+            <div class="content-box-md">
+                <div class="container">
+                    <form>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>Title</label><span class="required">*</span>
+                                <input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Enter Your First Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>Category</label><span class="required">*</span>
+                                <select class="form-control form-control-sm">
+                                    <option value="" disabled selected hidden>Select Your Category</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>Display Picture</label><span class="required">*</span><br>
+                                <button class="phimg" style="display:block;height:80px;" onclick="document.getElementById('getFile').click()">
+                                    <img src="images/User-Profile/upload.png"><br>
+                                    <span>Upload a Picture</span>
+                                </button>
+                                <input type='file' id="getFile" style="display:none">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>Profile Picture</label><span class="required">*</span><br>
+                                <button class="phimg" style="display:block;height:80px;" onclick="document.getElementById('getFile').click()">
+                                    <img src="images/User-Profile/upload.png"><br>
+                                    <span>Upload a Picture</span>
+                                </button>
+                                <input type='file' id="getFile" style="display:none">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>Type</label>
+                                <input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Enter Your First Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>Number of Pages</label>
+                                <input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Enter Your First Name">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <label>Description</label><span class="required">*</span>
+                            <textarea rows="6" placeholder="Enter Your Description" class="texta">
+                            </textarea>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="institute">
+            <p id="institute-details">Institute Information</p>
+            <div class="content-box-md">
+                <div class="container">
+                    <form>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>Country</label>
+                                <select class="form-control form-control-sm">
+                                    <option value="" disabled selected hidden>Select Your Country</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>Institution Name</label>
+                                <input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Enter Your Institution name">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="course">
+            <p id="course-details">Course Details</p>
+            <div class="content-box-md">
+                <div class="container">
+                    <form>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>Course Name</label>
+                                <input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Enter Your CourseName">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>Course Code</label>
+                                <input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Enter Your CourseCode">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>Professor/Lecturer</label>
+                                <input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Enter Your Professor/Lecturer">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="sell">
+            <p id="sell-details">Selling Information</p>
+            <div class="content-box-md">
+                <div class="container">
+                    <form>
+
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <label>Sell For</label><span class="required">*</span><br>
+                            <input type="radio" name="gender" id="male" value="male" checked>
+                            <label for="free">Free</label>
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="paid">Paid</label>
+                            <br><br>
+                            <label>Sell Price</label><span class="required">*</span>
+                            <input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Enter Your Price">
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12 pp" id="lastpicture">
+                            <div class="form-group signup-value">
+                                <label>Note Preview</label><br>
+                                <button class="phimg" style="display:block;height:80px;" onclick="document.getElementById('getFile').click()">
+                                    <img src="images/User-Profile/upload.png"><br>
+                                    <span>Upload a Picture</span>
+                                </button>
+                                <input type='file' id="getFile" style="display:none">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <button type="button" class="btn btn-primary">SAVE</button>
+                            <button type="button" class="btn btn-primary">PUBLISH</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <footer>
+
+        <div class="row">
+
+            <div class="col-md-6 col-sm-6 col-xs-12 fone">
+                <p class="">
+                    Copyright <i class="fa fa-copyright"></i> TatvaSoft all Rights Reserved.
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 ftwo">
+                <ul class="social-list">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+        
+
+
+
+
+
+
+
+
+
+    <!--
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+-->
+
+
+
+
+
+
+
+
+    <!--JQuery-->
+    <script src="js/jquery.js"> </script>
+    <!--Bootstarp JS-->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!--Custom JS-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
