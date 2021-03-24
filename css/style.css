@@ -301,7 +301,7 @@ LoginSection
 
 #login-page #below-text {
     font-family: "Open-Sans",sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 19px;
     color: #333333;
@@ -333,6 +333,7 @@ LoginSection
     font-weight: 400;
     line-height: 20px;
     color: #6255a5;
+    
 }
 
 .login-value {
@@ -346,8 +347,8 @@ LoginSection
     color: #fff;
     font-size: 18px;
     line-height: 22px;
-    font-family: "Open Sans", sans-serif';
-
+    font-family: "Open Sans", sans-serif;
+    transform: scale(0.92,0.92);
 }
 
 #login-page img {
@@ -398,6 +399,7 @@ LoginSection
     color: #ff3636;
     font-weight: 300;
     margin-bottom: 20px;
+    margin-left: 15px;
 }
 
 #up-incorrect{
@@ -407,8 +409,12 @@ LoginSection
 #remember-me{
     margin-top: 10px;
     padding-top: 5px;
+    margin-left: 15px;
 }
-
+.navupassword{
+    margin: 0;
+    padding: 0;
+}
 
 
 
@@ -1416,6 +1422,7 @@ Notes Details Section
     background-color: #fff;
     border: 1px solid #d1d1d1;
     border-radius: 3px;
+    transform: translateX(-60px);
 }
 .imagemate{
 /*    background-color:  red;*/
@@ -1458,6 +1465,11 @@ nd-2 .col-md-7{
 }
 .col-md-10{
     transform: translateY(-5px);
+}
+#notes .ndtwo #previewimg{
+    width: 400px;
+    height: 350px;
+    margin-bottom: 50px;
 }
 
 

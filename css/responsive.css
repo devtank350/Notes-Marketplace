@@ -127,6 +127,9 @@
 /*        transform: translateX(-15px);*/
         margin-right: 15px;
     }
+    .nd-2 .c1{
+        transform: translateX(0);
+    }
 }
 
 
@@ -246,6 +249,10 @@
     }
     .breqs{
         margin-right: 15px;
+    }
+    .forgot a{
+        font-size: 14px;
+        transform: translateX(10px);
     }
     
     
@@ -434,8 +441,29 @@
     #dash2earn{
         transform: translateY(-15px);
     }
-    
-
+    .forgot a{
+        float: none;
+/*        font-size: 12px;*/
+        transform: translateX(-10px);
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .navuforgot{
+        padding-left: 0;
+    }
+    #login-page .actual-form {
+        width: 50%;
+    }
+    .actual-signup-form{
+        width: 45%;
+    }
+    #notes .ch{
+/*        background-color: aquamarine;*/
+        padding-left: 20px;
+    }
+    #nd-btn{
+        transform: translateY(30px);
+    }
 }
 
 
@@ -729,6 +757,39 @@
     }
     #inprogress{
         transform: translateY(30px) translateX(-15px);
+    }
+    .forgot a{
+        float: none;
+/*        font-size: 12px;*/
+        transform: translateX(-10px);
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .navuforgot{
+        padding-left: 0;
+    }
+    #login-page .actual-form {
+        width: 60%;
+    }
+    .actual-forgot-password-form{
+        width: 50%;
+    }
+    .actual-change-password-form{
+        width: 50%;
+    }
+    .actual-signup-form{
+        width: 55%;
+    }
+    #notes .ch{
+/*        background-color: aquamarine;*/
+        padding-left: 20px;
+        margin-top: 30px;
+    }
+    #notes{
+        padding-top: 130px;
+    }
+    .nd-2 .c1{
+        transform: translateX(0px);
     }
 }
 
@@ -1069,7 +1130,63 @@
     #inprogress{
         transform: translateY(30px) translateX(-15px);
     }
-    
+    .forgot a{
+        float: none;
+        font-size: 15px;
+        transform: translateX(-10px);
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .navuforgot{
+        padding-left: 0;
+    }
+    #login-page .actual-form {
+        width: 60%;
+    }
+    .actual-forgot-password-form{
+        width: 70%;
+    }
+    .actual-change-password-form{
+        width: 50%;
+    }
+    .actual-signup-form{
+        width: 75%;
+    }
+    #home3 .col-xs-12{
+        margin: 5px;
+        transform: translateX(-210px);
+        width: 500px;
+    }
+    #home3{
+/*        background-color: aquamarine;*/
+        padding: 0px;
+        margin: 0;
+    }
+    #home2 .upper .imgvalaxs{
+/*        text-align: right;*/
+        background-color: aquamarine;
+    }
+    #home2 .upper .imgvalaxs img{
+        text-align: center;
+/*        transform: translateX(250px);*/
+        margin: auto;
+    }
+    #notes .ch{
+/*        background-color: aquamarine;*/
+        padding-left: 20px;
+        margin-top: 30px;
+    }
+    #notes .ch p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    #notes{
+        padding-top: 130px;
+    }
+    .nd-2 .c1{
+        transform: translateX(0px);
+        height: 150px;
+    }
     
     
 }
@@ -1085,6 +1202,21 @@
 /*        background-color: aquamarine;*/
         margin-left: 30px;
         
+    }
+    #login-page .actual-form {
+        width: 80%;
+    }
+    .actual-change-password-form{
+        width: 60%;
+    }
+    #home3 .col-xs-12{
+        margin: 5px;
+        transform: translateX(-210px);
+        width: 300px;
+    }
+    .nd-2 .c1 img{
+        position: fixed;
+        transform: scale(0.3,0.4) translateX(-385px) translateY(-50px);
     }
 }
 
@@ -1103,6 +1235,12 @@
     footer ul i{
         transform: translateX(5px);
     }
+    #notes .ch p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    
 }
 
 
@@ -1114,6 +1252,15 @@
     #member-details .one{
         padding-top: 25px;
     }
+    #home #bg-text h1{
+        font-size: 28px;
+        line-height: 32px;
+        margin-top: 100px;
+    }
+    #home #bg-text p{
+        font-size: 18px;
+        line-height: 24px;
+    }
     
 }
 
@@ -1121,6 +1268,9 @@
 
 
 @media (max-width:480px){
+    #header .homepageimglogo{
+        
+    }
     #header-d #header-d-imglogo{
         transform: translateX(-70px) translateY(15px) scale(0.8,0.8);
     }
@@ -1182,8 +1332,65 @@
     #faq .two{
         width: 93%;
     }
+    #login-page .actual-form {
+        width: 100%;
+/*        padding: 0;*/
+/*        margin: 0;*/
+    }
+    .actual-forgot-password-form{
+        width: 90%;
+    }
+    .actual-change-password-form{
+        width: 90%;
+    }
+    .actual-signup-form{
+        width: 90%;
+    }
+     #home3 .col-xs-12{
+        margin: 5px;
+        transform: translateX(-280px);
+        width: 300px;
+        
+    }
+    #home3 #cus{
+        font-size: 20px;
+        line-height: 24px;
+        text-align: left;
+        transform:translateX(10px);
+    }
+    #home2 .horizontal-heading h5{
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+    }
+    #home2 #about-right p{
+        font-size: 16px;
+    }
+     .nd-2 .c1 img{
+        position: fixed;
+        transform: scale(0.2,0.3) translateX(-625px) translateY(-50px);
+        margin-right: 20px;
+    }
+    #notes .ndtwo #previewimg{
+        transform: scale(0.7,0.7);
+    }
     
 
+}
+
+@media (max-width:400px){
+    #books img{
+        transform: scale(0.6,0.6) translateX(0px);
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    #books{
+/*        background-color: aquamarine;*/
+    }
+    #books .subp{
+        text-align: left;
+    }
 }
 
 
@@ -1192,7 +1399,7 @@
         font-size: 8px;
         line-height: 10px;
     }
-}
+
  #adashboard1 #news #select{
         transform: translateY(-20px);
         width: 120px;
@@ -1202,10 +1409,62 @@
 /*        width: 240px;*/
     }
     #adashboard1 #news input{
-         width: 120px;
+        width: 120px;
     }
-
-
+    #userprofilebgt{
+        font-size: 26px;
+    }
+    #basic-p #basic-details{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    #address #address-details{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    #college #college-details{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    #basic-p{
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #address{
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #college{
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+     #home3 .col-xs-12{
+        margin: 5px;
+        transform: translateX(-280px);
+        width: 250px;
+        
+    }
+    #books img{
+        transform: scale(0.6,0.6) translateX(-30px);
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+     .nd-2 .c1 img{
+       opacity: 0;
+    }
+    .nd-2 .c1 h5{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .nd-2 .c1 p{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
 
 
 
