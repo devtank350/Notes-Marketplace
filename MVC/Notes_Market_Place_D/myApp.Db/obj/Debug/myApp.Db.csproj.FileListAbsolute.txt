@@ -1,0 +1,14 @@
+C:\Users\Dev\source\repos\Notes_Market_Place_D\myApp.Db\bin\Debug\myApp.Db.dll.config
+C:\Users\Dev\source\repos\Notes_Market_Place_D\myApp.Db\bin\Debug\myApp.Db.dll
+C:\Users\Dev\source\repos\Notes_Market_Place_D\myApp.Db\bin\Debug\myApp.Db.pdb
+C:\Users\Dev\source\repos\Notes_Market_Place_D\myApp.Db\bin\Debug\EntityFramework.dll
+C:\Users\Dev\source\repos\Notes_Market_Place_D\myApp.Db\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Dev\source\repos\Notes_Market_Place_D\myApp.Db\bin\Debug\MyApp.Models.dll
+C:\Users\Dev\source\repos\Notes_Market_Place_D\myApp.Db\bin\Debug\MyApp.Models.pdb
+C:\Users\Dev\source\repos\Notes_Market_Place_D\myApp.Db\bin\Debug\EntityFramework.xml
+C:\Users\Dev\source\repos\Notes_Market_Place_D\myApp.Db\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Dev\source\repos\Notes_Market_Place_D\myApp.Db\obj\Debug\myApp.Db.csprojAssemblyReference.cache
+C:\Users\Dev\source\repos\Notes_Market_Place_D\myApp.Db\obj\Debug\myApp.Db.csproj.CoreCompileInputs.cache
+C:\Users\Dev\source\repos\Notes_Market_Place_D\myApp.Db\obj\Debug\myApp.Db.csproj.CopyComplete
+C:\Users\Dev\source\repos\Notes_Market_Place_D\myApp.Db\obj\Debug\myApp.Db.dll
+C:\Users\Dev\source\repos\Notes_Market_Place_D\myApp.Db\obj\Debug\myApp.Db.pdb
