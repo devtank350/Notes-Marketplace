@@ -1,0 +1,6 @@
+C:\Users\Dev\source\repos\Notes_Market_Place_D\MyApp.Models\bin\Debug\MyApp.Models.dll
+C:\Users\Dev\source\repos\Notes_Market_Place_D\MyApp.Models\bin\Debug\MyApp.Models.pdb
+C:\Users\Dev\source\repos\Notes_Market_Place_D\MyApp.Models\obj\Debug\MyApp.Models.csprojAssemblyReference.cache
+C:\Users\Dev\source\repos\Notes_Market_Place_D\MyApp.Models\obj\Debug\MyApp.Models.csproj.CoreCompileInputs.cache
+C:\Users\Dev\source\repos\Notes_Market_Place_D\MyApp.Models\obj\Debug\MyApp.Models.dll
+C:\Users\Dev\source\repos\Notes_Market_Place_D\MyApp.Models\obj\Debug\MyApp.Models.pdb

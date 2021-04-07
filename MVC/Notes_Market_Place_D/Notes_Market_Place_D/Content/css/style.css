@@ -1,0 +1,3015 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    color: #212226;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", sans-serif;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+section {
+    background: #fff;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+/*Header // Nevigation*/
+nav .navbar{
+    padding: 35px 0 20px 0;
+}
+.site-nav-wrapper{
+    padding: 0 85px;
+/*    margin-right: 3%;*/
+    padding-right: 85px;
+}
+.navbar-brand{
+    padding: 13px 15px;
+}
+ul.navbar-nav >li a{
+    font-family: "Raleway",sans-serif;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+ul.navbar-nav >li a:hover,
+ul.navbar-nav >li a:focus{
+/*    background: #212226;*/
+    color: #6255a5;
+}
+#header-d{
+    position: fixed;
+    background: #fff;
+    color: #6255a5;
+    box-shadow: 0 8px 6px -9px #999;
+    width: 100%;
+    z-index: 5;
+}
+#header-d li img{
+    background-color: #fff;
+}
+#header-d li a{
+    font-family: "Raleway",sans-serif;
+    color: black;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#header-d li a:hover{
+    color: #6255a5;
+/*    background-color: aqua;*/
+}
+.navbar-brand1{
+    padding: 13px 15px;
+}
+.navbar-brand1 img{
+    transform: translateY(12px);
+/*    transform: translateX(-12px);*/
+    padding-left: 50px;
+}
+#header-d ul{
+    padding-left: 5%;
+/*    margin-left: 15%;*/
+    margin-right: 5%;
+}
+
+/*White Navigation*/
+.white-nav-top{
+    background: #fff;
+    padding: 10px 0;
+    -webkit-box-shadow: 0 8px 6px -9px #999;
+    box-shadow: 0 8px 6px -9px #999;
+    z-index: 2;
+}
+.white-nav-top ul.navbar-nav>li>a{
+    color: #212226;
+}
+.white-nav-top ul.navbar-nav>li>a #header-btn{
+    background: #6255a5;
+    color: #fff;
+}
+.white-nav-top ul.navbar-nav >li a:hover,
+.white-nav-top ul.navbar-nav >li a:focus{
+    color: #6255a5;
+}
+
+/*ScrollSpy*/
+.white-nav-top ul.navbar-nav >li.active > a{
+    color: #6255a5;
+    font-weight: 500;
+}
+#header-btn{
+    background: #fff;
+    color: #6255a5;
+    font-weight: 600;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: "Open sans",sans-serif;
+    transform: translateY(-8px);
+}
+#header-bt{
+    background: #6255a5;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: "Open sans",sans-serif;
+    transform: translateY(-8px);
+}
+#header-img{
+    transform: translateY(-8px);
+}
+
+
+
+
+
+
+/*Footer*/
+
+footer{
+    height: 40px;
+    margin-left: 9%;
+    margin-right: 9%;
+/*    background: red;*/
+    text-align: right;
+}
+footer p{
+    text-align: left;
+}
+.admintwo p{
+    text-align: right;
+/*    background-color: aqua;*/
+}
+ul.social-list {
+    padding: 0;
+    margin top: 20px;
+}
+
+ul.social-list li {
+    display: inline-block;
+    padding-bottom: 15px;
+
+}
+
+ul.social-list li a {
+    border: 1px solid #6255a5;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    color: #fff;
+    border-radius: 50%;
+    background: #6255a5;
+    -webkit-transition: all 400ms linear;
+    transition: all 400ms linear;
+/*    transform: translateY(-500px;)*/
+}
+ul.social-list li a i{
+    padding-right: 10px;
+/*    transform: translateY(-900px;)*/
+}
+
+
+.dropdown button{
+    transform: translateY(8px);
+    background-color: #fff;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+.dropdown button:focus:active {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.dropdown-menu a{
+    font-family: "Open Sans",sans-serif;
+    color: #333333;
+    font-size: 12px;
+    padding-left: 25px;
+}
+.dropdown button:hover{
+/*    background-color: aqua;*/
+}
+.dropdown a:hover{
+    color: #fff;
+    background-color: #6255a5;  
+}
+.dropdown-menu{
+    transform: translateX(-150px);
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 50px 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  color: #f4c613;
+}
+#page{
+/*    box-shadow: 0px;*/
+}
+.pagination li a{
+    color: #333333;
+    font-size: 14px;
+/*    padding: 0 5px;*/
+}
+#design1{
+    background-color: #6255a5;
+    border-radius: 50%;
+    transform: translateX(-2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#########################################
+LoginSection
+#########################################*/
+#login-page {
+    background: url('../images/pre-login/banner-with-overlay.jpg');
+    width: 100%;
+    height: 100%;
+}
+
+#login-page label {
+    font-family: "open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+}
+
+#login-page #below-text {
+    font-family: "Open-Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #333333;
+    margin-top: 20px;
+}
+
+#login-form {
+    background-color: white;
+    padding: 50px;
+/*    width: auto;*/
+    background-size: cover;
+    border-radius: 5px;
+}
+
+#login-form h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #6255a5;
+    margin: 0;
+    padding: 0;
+}
+
+.forgot a {
+    float: right;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #6255a5;
+    
+}
+
+.login-value {
+    margin-top: 20px;
+}
+
+.login-btn {
+    background-color: #6255a5;
+    height: 36px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Open Sans", sans-serif;
+    transform: scale(0.92,0.92);
+}
+
+#login-page img {
+    width: auto;
+    height: auto;
+    padding-top: 20px;
+}
+
+#login-page .actual-form {
+    padding-top: 25px;
+    width: 40%;
+    height: auto;
+    margin: auto;
+}
+
+#login-page #bottom-text {
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+}
+
+#bottom-text a {
+    color: #6255a5;
+}
+
+#login-page .field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+
+}
+
+#exampleCheck1 {
+    border: 1px solid #d1d1d1;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+}
+#incorrect{
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    color: #ff3636;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+#up-incorrect{
+/*    padding-bottom: 0px;*/
+    margin-bottom: 5px;
+}
+#remember-me{
+    margin-top: 10px;
+    padding-top: 5px;
+    margin-left: 15px;
+}
+.navupassword{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#########################################
+SignUpSection
+#########################################*/
+
+
+.actual-signup-form {
+    padding-top: 25px;
+    width: 35%;
+    height: auto;
+    margin: auto;
+}
+
+#signup-page {
+    background: url('../images/pre-login/banner-with-overlay.jpg');
+    width: 100%;
+    height: 100%;
+}
+
+#signup-page label {
+    font-family: "open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+#signup-page #below-text-s {
+    font-family: "Open-Sans",sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #333333;
+    margin-top: 10px;
+}
+
+#signup-page .field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+
+}
+
+#signup-page img {
+    width: auto;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+#signup-page #bottom-text {
+    margin-top: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.signup-btn {
+    background-color: #6255a5;
+    height: 36px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Open Sans", sans-serif';
+
+}
+
+#signup-form {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-right: 25px;
+    padding-left: 25px;
+    width: auto;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+#signup-form h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #6255a5;
+    margin: 0;
+    padding: 0;
+}
+
+.signup-value {
+    margin-top: 5px;
+}
+
+#signup-page .actual-form {
+    padding-top: 25px;
+    width: 40%;
+    height: auto;
+    margin: auto;
+}
+
+#signup-page #bottom-text a {
+    color: #6255a5;
+}
+#signup-form input{
+    margin: 0;
+}
+#create-note{
+    color: green;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+#########################################
+Forgot Password Section
+#########################################*/
+
+.actual-forgot-password-form {
+    padding-top: 25px;
+    width: 40%;
+    height: auto;
+    margin: auto;
+}
+
+#forgot-password-page {
+    background: url('../images/pre-login/banner-with-overlay.jpg');
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+}
+
+#forgot-password-form {
+    background-color: white;
+    padding:35px;
+    width: auto;
+    background-size: cover;
+    border-radius: 5px;
+}
+#forgot-password-page img {
+    width: auto;
+    height: auto;
+    padding-top: 12%;
+    padding-bottom: 0;
+}
+
+#forgot-password-page label {
+    font-family: "open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+#forgot-password-page #below-text-fp {
+    font-family: "Open-Sans",sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #333333;
+    margin-top: 10px;
+}
+.forgot-password-btn {
+    background-color: #6255a5;
+    height: 36px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Open Sans", sans-serif';
+
+}
+#forgot-password-form h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #6255a5;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#########################################
+Change Password Section
+#########################################*/
+
+#change-password-page .field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+
+}
+.actual-change-password-form {
+    padding-top: 25px;
+    width: 35%;
+    height: auto;
+    margin: auto;
+}
+
+#change-password-page {
+    background: url('../images/pre-login/banner-with-overlay.jpg');
+    width: 100%;
+    height: 100%;
+}
+
+#change-password-form {
+    background-color: white;
+    padding:35px;
+    width: auto;
+    background-size: cover;
+    border-radius: 5px;
+}
+#change-password-page img {
+    width: auto;
+    height: auto;
+    padding-top: 7%;
+    padding-bottom: 0;
+}
+
+#change-password-page label {
+    font-family: "open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+#change-password-page #below-text-cp {
+    font-family: "Open-Sans",sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #333333;
+    margin-top: 10px;
+}
+.change-password-btn {
+    background-color: #6255a5;
+    height: 36px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Open Sans", sans-serif';
+
+}
+#change-password-form h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #6255a5;
+    margin: 0;
+    padding: 0;
+}
+#change-password-form .form-group{
+    padding-bottom: 10px;
+}
+
+
+
+
+/*
+#########################################
+User Profile Section
+#########################################*/
+#user{
+    margin: 0px;
+    background: #fff;
+    padding: 32px 0;
+    z-index: 5;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+/*    width: 100%;*/
+}
+#user .container{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 5;
+    background-color: #ffffff;
+}
+#user img{
+    padding-left: 20%;
+    padding-top: 2%;
+}
+#user ul{
+    padding-right: 3%;
+}
+#user-s{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+/*    background-color: aqua;*/
+}
+#user-s .container{
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+#user-s .bgtext{
+    background: url('../images/User-Profile/banner-with-overlay.jpg');
+    height: 250px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgtext p{
+    color: #ffffff;
+    font-family: "Open Sans",sans-serif;
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 600;
+    padding-top: 120px;
+}
+#user ul li a{
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #333333;
+}
+#basic-p{
+    margin: 60px;
+}
+#basic-p #basic-details{
+    font-family: "Open Sans",sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 52px;
+    color: #6255a5;
+    padding-left: 15px;
+}
+#basic-p label{
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+}
+#basic-p input{
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: red;
+}
+#address{
+    margin: 60px;
+}
+#address #address-details{
+    font-family: "Open Sans",sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 52px;
+    color: #6255a5;
+    padding-left: 15px;
+}
+#address label{
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+}
+#address input{
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: red;
+}
+#college{
+    margin: 60px;
+}
+#college #college-details{
+    font-family: "Open Sans",sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 52px;
+    color: #6255a5;
+    padding-left: 15px;
+}
+#college label{
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+}
+#college input{
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: red;
+}
+#college .user-submit-btn{
+    background-color: #6255a5;
+    width: 150px;
+    height: 36px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Open Sans",sans-serif;
+    margin-left: 15px;
+}
+#user-footer ul li{
+/*    background-color: #6255a5;*/
+    margin: 10px;
+}
+#user-footer img{
+    border:5px solid #6255a5;
+    background: #6255a5;
+    border-radius:50%; 
+    width: 36x;
+    height: 36px;
+    padding: 0px;
+}
+#user-footer{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+#pn{
+    width: 90%;
+}
+
+}
+.dob input{
+    background-image: url("../images/User-Profile/calendar.png");
+    background-position: 97% ,0;
+    background-repeat: no-repeat;
+    background-color: aqua;
+}
+
+.phone .col-md-2{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+/*    background-color: red;*/
+}
+.phone .col-md-2 select{
+    width: 100%;
+}
+.phone .col-md-10{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.phone .col-md-10 input{
+    width: 100%;
+    transform: translateY(5px);
+}
+.phimg{
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    width: 49%;
+}
+.pp{
+    width: 100%;
+}
+
+
+
+
+
+
+
+/*
+#########################################
+Email Verification Section
+#########################################*/
+#email-v{
+    padding: 15% 28%
+}
+#email-v #main-text{
+    padding-top: 30px;
+    padding-bottom: 25px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #6255a5;
+}
+#email-v #normal-text{
+    font-size: 16px;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+    color: #333333;
+    line-height: 20px;
+}
+#email-v #normal-text span{
+    font-size: 18px;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 600;
+    color: #333333;
+    line-height: 22px;
+}
+.email-v-btn{
+    background-color: #6255a5;
+    border-radius: 3px;
+    color: #fff;
+    font-family:"Open Sans",sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px; 
+}
+
+
+
+
+
+
+
+
+/*
+#########################################
+Home Section
+#########################################
+*/
+#home{
+    padding: 0;
+    margin: 0;  
+}
+#home .content-box-lg{
+    padding: 0;
+    margin: 0;
+    background-image: url("../images/home/banner-with-overlay.jpg");
+    height: 658px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#home #bg-text{
+    padding-top: 40%;
+    padding-left: 0%;
+}
+#bg-text h1{
+    font-size: 45px;
+    line-height: 54px;
+    color: #fff;
+    font-weight: 600;
+    font-family: "Open Sans",sans-serif;
+}
+
+#bg-text p{
+    padding-top: 25px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Open Sans",sans-serif;
+}
+.home-learn-btn{
+    color: #fff;
+    width: 172px;
+    height: 38px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    font-family: "Open Sans",sans-serif;   
+    background-color: transparent;
+}
+#home2{
+    
+/*    background-color: aqua;*/
+}
+#home2 .content-box-md{
+    padding-top: 50px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+#home2 .horizontal-heading h5{
+    font-size: 34px;
+    line-height: 38px;
+    font-weight: 600;
+    color: #6255a5;
+    font-family: "Open Sans",sans-serif;
+}
+#home2 #about-right p{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    font-family: "Open Sans",sans-serif;
+}
+#home2 .upper{
+/*    margin:60px;*/
+    margin: 50px 0 0 0;
+    padding:0 0 50px 0;
+    background-color:whitesmoke;
+    width: 100%;
+}
+#home2 .upper .container{
+    padding: 0;
+    margin: 0 auto;
+/*    background-color: aquamarine;*/
+/*    display: inline block;*/
+/*    text-align: center;*/
+}
+
+#home2 .upper .container .row{
+    padding: 0;
+    margin: 0 auto;
+}
+#home2 .upper .container .row .row{
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+#home2 .upper #head2{
+    font-size: 34px;
+    line-height: 38px;
+    font-weight: 600;
+    color: #6255a5;
+    font-family: "Open Sans",sans-serif;
+    text-align: center;
+/*    margin-right: 2%;*/
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+/*    padding:30px;*/
+    margin-bottom: 50px;
+}
+.upper .col-md-3{
+/*    width: 50%;*/
+/*    padding: 0 50px 0 50px;*/
+}
+.upper .col-md-3 img{
+    background-color: white;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #fff;
+    display: block;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.08);
+    margin-left: 60px;
+}
+#home2 .upper h5{
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
+    color: #6255a5;
+    font-weight: 600;
+    font-family: "Open Sans",sans-serif;
+}
+#home2 .upper p{
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+}
+#home2 .upper button{
+/*    margin-left: 20%;*/
+    border-radius: 3px;
+    color: #fff;
+    background-color: #6255a5;
+    font-weight: 600;
+    width: 150px;
+    font-size: 18px;
+/*    height: 30px;*/
+}
+#home3{
+    margin:50px 0 0 0;
+/*    background-color: burlywood;*/
+}
+#home3 img{
+    width: 100px;
+    height: 100px;
+}
+#home3 .col-md-6 h2{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    font-family: "Open Sans",sans-serif;
+    color: #6255a5;
+    margin:0px;
+    padding-top: 16px;
+    padding-left: 120px;
+}
+#home3 .col-md-6 #b-text{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: "Open Sans",sans-serif;
+    color: #333333;
+    margin:0px;
+    padding-left: 120px;
+}
+#home3 .customers{
+    padding: 0;
+/*    margin: 0;*/
+/*    background-color: brown;*/
+    margin-right: 100px;
+    margin-left: 280px;
+/*    text-align: center;*/
+    
+}
+#home3 .col-md-6{
+    background: #fff;
+    margin:2%;
+    width: 600px;
+    border-radius: 3px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.08); 
+}
+#home3 #cus{
+    font-size: 34px;
+    line-height: 38px;
+    font-weight: 600px;
+    color: #6255a5;
+    font-family: "Open Sans",sans-serif;
+    margin-bottom: 20px;
+}
+#home3 .customers p{
+    font-style: italic;
+    color: #333333;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+}
+#home3 .content-box-md{
+    padding: 0;
+    margin: 0;
+/*    background-color: aquamarine;*/
+}
+
+
+
+
+
+
+
+/*
+#########################################
+Search Section
+#########################################
+*/
+
+#search1{
+    padding: 0;
+    margin: 0;
+}
+#search1 .content-box-lg{
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/home/banner-with-overlay.jpg);
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#search{
+    margin: 0px;
+    background: #fff;
+    padding: 32px 0;
+    z-index: 5;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+/*    width: 100%;*/
+}
+#search .container{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 5;
+    background-color: #ffffff;
+}
+#search img{
+    padding-left: 20%;
+    padding-top: 2%;
+}
+#search ul{
+    padding-right: 3%;
+}
+#search1 #bg-text{
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 36px;
+    font-family: "Open Sans",sans-serif;
+    padding-top: 10%;
+}
+#search-item #search-note{
+    width: 100%;
+    
+}
+
+#saf{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #6255a5;
+    padding-left: 8%;
+    padding-bottom: 20px;
+}
+.s2{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.c1{
+    padding-top: 10px;
+    background: #f9f9f9;
+/*    margin: 10px;*/
+}
+#books img{
+    width: 360px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.c2{
+/*    background: aqua;*/
+    margin-top: 20px;
+}
+.sub{
+    height: 45px;
+}
+.c2 .col-md-4{
+/*    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5); */
+/*    width: 360px;*/
+}
+
+
+
+
+
+
+
+
+
+/*
+#########################################
+Notes Details Section
+#########################################
+*/
+
+#notes{
+    padding-left:  7%;
+    padding-right:  9%;
+    padding-top: 10%;
+}
+#notes .content-box-md{
+/*    background-color: aqua;*/
+}
+#notes .container{
+/*    background-color: aqua;*/
+}
+#notes .lef{
+    text-align: left;
+}
+#notes .rig{
+    text-align: right;
+}
+.ch{
+    padding-left: 90px;
+    padding-right: 20px;
+}
+#notes img{
+    height: 240px;
+    width: 260px;
+}
+#notes span{
+    padding-left: 18px;
+}
+.nd{
+    padding-left: 30px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 24px;
+    font-weight:600;
+    color:#6255a5;
+}
+#notes .col-md-6 .col-md-8 h3{
+    color: #6255a5;
+    font-weight: 600;
+    font-family: "Open Sans",sans-serif;
+    font-size: 30px;
+    line-height: 35px;
+}
+#notes .col-md-6 .col-md-8 h5{
+    color: #333333;
+    font-weight: 400;
+    font-family: "Open Sans",sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+#notes .col-md-6 .col-md-8 p{
+    color: #333333;
+    font-weight: 400;
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+#nd-btn{
+    background: #6255a5;
+    width: 160px;
+    height: 40px;
+    color: #fff;
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+}
+.lef p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333333;
+    font-family: "Open Sans",sans-serif;
+}
+.rig p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #6255a5;
+    font-family: "Open Sans",sans-serif;
+}
+.ch span{
+    font-size: 14px;
+/*    line-height: 20px;*/
+    font-weight: 400;
+    color: #df3434;
+    font-family: "Open Sans",sans-serif;
+}
+.rig p i{
+    color: #f4c613;
+}
+.nd2img{
+    width: 15px;
+    height: 15px;
+    
+}
+.nd-2 .c1{
+/*    background-color: aquamarine;*/
+    height: 120px;
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    transform: translateX(-60px);
+}
+.imagemate{
+/*    background-color:  red;*/
+    
+}
+.imji{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    transform: scale(0.7,0.35) translateY(-200px) translateX(-15px);
+    top: 20px;
+}
+.nd-2 .col-md-5 img{
+    transform: scale(1.8,1.5) translateY(40px) translateX(55px);
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    
+}
+.col-md-10 h5{
+    color: #333333;
+    font-weight: 600;
+    font-family: "Open Sans",sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+.col-md-10 p{
+    color: #333333;
+    font-weight: 400;
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+/*    margin-bottom: 50px;*/
+}
+.col-md-10 i{
+    color: #f4c613;}
+
+nd-2 .col-md-7{
+    margin: 20px;
+}
+.col-md-10{
+    transform: translateY(-5px);
+}
+#notes .ndtwo #previewimg{
+    width: 400px;
+    height: 350px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#########################################
+FAQ Section
+#########################################*/
+
+#faq .content-box-lg{
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/home/banner-with-overlay.jpg);
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#faq #bg-text{
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 36px;
+    font-family: "Open Sans",sans-serif;
+    padding-top: 11%;
+}
+#faq .col-md-12{
+/*    background-color: aquamarine;*/
+    margin:10px 0;
+}
+.faq1{
+    margin-top: 60px;
+}
+.faq1 h4{
+    color: #6255a5;
+    font-weight: 600;
+    font-family: "Open Sans",sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+}
+.faq1 .col-md-12 i{
+    text-align: right;
+    width: 100%;
+    transform: translateY(-20px);
+    font-size: 16px;
+}
+.faq1 p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    color: #333333;
+    background-color: #f3f3f3;
+    padding-top: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0;
+}
+.faq1 span{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    color: #333333;
+}
+.two{
+    border: 1px solid #d1d1d1;
+    padding: 0 10px;
+    width: 97%;
+    transform: translateX(15px);
+}
+#sespan{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+#########################################
+Contact Section
+#########################################*/
+
+.contact2{
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-top: 50px;
+}
+.contact2 textarea{
+    height: 187px;
+}
+.contact2 .container{
+    margin-top: 30px;
+}
+#contact-btn{
+    background-color: #6255a5;
+    border-radius: 3px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  left: 450px;
+  top: 60px;
+  width: 36%; /* Full width */
+  height: 400px; /* Full height */
+  overflow:visible; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+/*  padding-top: 50px;*/
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#myModal img{
+    transform: scale(0.25,0.25) translateY(-350px) translateX(385px);
+/*    text-align: center;*/
+    padding:0;
+/*    margin: auto;*/
+}
+#myModal h3{
+    
+}
+#myModal .col-md-12{
+    width: 40%;
+}
+#myModal p{
+/*    background-size: cover;*/
+    transform: translateY(-150px);
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans",sans-serif;
+}
+#myModal #namep{
+/*    background-size: cover;*/
+    transform: translateY(-150px);
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Open Sans",sans-serif;
+}
+#myModal .container{
+    padding: 0;
+    margin: 0;
+/*    background-color: aquamarine;*/
+}
+#myModal .row{
+    padding: 0;
+    margin: 0;
+}
+#myModal .content-box-md{
+    background-color: aquamarine;
+    height: 500px;
+}
+#myModal h3{
+    padding-top: 0;
+    margin-top: 0;
+    transform: translateY(-170px);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+#########################################
+Dashboard Section
+#########################################*/
+
+#dashboard1{
+    margin-left: 9%;
+    margin-right: 9%;
+    padding-top: 100px;
+}
+#dashboard1 table{
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #d1d1d1;
+}
+#dashboard1 table tr{
+    border: 1px solid #d1d1d1;
+    height: 60px;
+}
+#dashboard1 table tr th{
+    font-size: 16px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    font-weight: 600;
+    color: #333333;
+    padding-left: 10px;
+}
+#dashboard1 table tr td{
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+    padding-left: 10px;
+}
+#dashboard1 h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #6255a5;
+    line-height: 28px;
+    font-family: "Open Sans",sans-serif;
+}
+#dashboard1 i{
+/*    background-color: #fff;*/
+    font-size: 18px;
+}
+#dashboard1 #myearning{
+    border-right: 1px solid #d1d1d1;
+    height: 120px;
+}
+#dashboard1 #myearn{
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    height: 120px;
+}
+#dashboard1 .numbers{
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+/*    background-color: aquamarine;*/
+    height: 120px;
+    margin-left: 30px;
+}
+#myearn p,.numbers p{
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+    text-align: center;  
+}
+.dashb1 h3{
+    text-align: center;
+}
+.search1{
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+/*    float: right;*/
+    margin-right: 50px;
+}
+#dash-btn{
+/*    float: right;*/
+    margin-top: 20px;
+    background-color: #6255a5;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 3px;
+}
+#dash-btn1{
+/*    float: right;*/
+    margin-top: 10px;
+    background-color: #6255a5;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 3px;
+    
+}
+#rightflow{
+    float: right;
+/*    width: 600px;*/
+    transform: translateX(130px);
+}
+#rightflow1{
+    float: right;
+/*    width: 600px;*/
+    transform: translateX(100px);
+}
+#main-t-d{
+    font-size: 32px;
+    font-weight: 600;
+    color: #6255a5;
+    font-family: "Open Sans",sans-serif;
+}
+.num-div{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: "Open Sans",sans-serif;
+}
+
+
+
+
+
+/*
+#########################################
+Contact US Section
+#########################################*/
+#contact h4{
+    font-family: "Open Sans",sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #6255a5;
+    padding-top: 50px;
+}
+#contact span{
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+/*    color: #6255a5;*/
+/*    padding-top: 50px;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#########################################
+Add Notes Section
+#########################################*/
+#add-n{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+/*    background-color: aqua;*/
+}
+#add-n .container{
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+#add-n .bgtext{
+    background: url('../images/User-Profile/banner-with-overlay.jpg');
+    height: 250px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgtext p{
+    color: #ffffff;
+    font-family: "Open Sans",sans-serif;
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 600;
+    padding-top: 120px;
+}
+#user ul li a{
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #333333;
+}
+#basic-nd{
+    margin: 60px;
+}
+#basic-nd #basic-note-details{
+    font-family: "Open Sans",sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 52px;
+    color: #6255a5;
+}
+#basic-nd label{
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+}
+#basic-nd input{
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+/*    color: red;*/
+}
+#institute{
+    margin: 60px;
+}
+#institute #institute-details{
+    font-family: "Open Sans",sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 52px;
+    color: #6255a5;
+}
+#institute label{
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+}
+#institute input{
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: red;
+}
+#course{
+    margin: 60px;
+}
+#course #course-details{
+    font-family: "Open Sans",sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 52px;
+    color: #6255a5;
+}
+#course label{
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+}
+#course input{
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+/*    color: red;*/
+}
+#course .user-submit-btn{
+    background-color: #6255a5;
+    width: 150px;
+    height: 36px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Open Sans",sans-serif;
+}
+#sell{
+    margin: 60px;
+}
+#sell #sell-details{
+    font-family: "Open Sans",sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 52px;
+    color: #6255a5;
+}
+#sell label{
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+}
+#sell input{
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+/*    color: red;*/
+}
+#sell .btn-primary{
+    background-color: #6255a5;
+    color: #fff;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+#lastpicture label{
+    line-height: 40px;
+}
+#basic-nd .phimg{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+#########################################
+Download Section
+#########################################*/
+
+#download{
+    margin-left: 9%;
+    margin-right: 9%;
+    padding-top: 100px;
+}
+#download table{
+    width: 95.5%;
+    border-radius: 3px;
+    border: 1px solid #d1d1d1;
+}
+#download table tr{
+    border: 1px solid #d1d1d1;
+    height: 60px;
+}
+#doenload table tr th{
+    font-size: 16px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    font-weight: 600;
+    color: #333333;
+    padding-left: 10px;
+}
+#download table tr td{
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+    padding-left: 10px;
+}
+#download h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #6255a5;
+    line-height: 28px;
+    font-family: "Open Sans",sans-serif;
+}
+#download i{
+/*    background-color: #fff;*/
+    font-size: 18px;
+}
+.input-img{
+    position: relative;
+}
+.input-img img{
+    position: absolute;
+    top: 24px;
+    left: 550px;
+    padding: 9px 8px;
+}
+
+.texta{
+    width: 100%;
+    resize: none;
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+#download table tr:hover{
+    box-shadow: 0 8px 6px -5px #212226;
+}
+#mybt{
+    
+}
+
+
+
+
+
+.modal-dialog{
+    background-color: aqua;
+    width: 500px;
+}
+h2.set-text{
+    margin-bottom: 20px !important;
+    margin-top: 0px !important;
+    margin-left: 30px;
+}
+#exampleModal .set-rate{
+    margin-bottom: 30px;
+    margin-left: 20px;
+    
+}
+.set-label{
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+#text-ar-1{
+    width: 55%;
+    height: 153px!important;
+    margin-left: 50px;
+}
+#exampleModal #mybt{
+    margin-left: 3%;
+}
+.top-page{
+    margin-top: -60px;
+}
+#mybt{
+    transform: translateX(50px) translateY(-20px);
+}
+
+
+
+/*
+#########################################
+Admin Dashboard Section
+#########################################*/
+
+#adashboard1{
+    margin-left: 9%;
+    margin-right: 9%;
+    padding-top: 100px;
+}
+#adashboard1 table{
+/*    width: 95.5%;*/
+    border-radius: 3px;
+    border: 1px solid #d1d1d1;
+}
+#adashboard1 table tr{
+    border: 1px solid #d1d1d1;
+    height: 60px;
+}
+#adashboard1 table tr th{
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    font-weight: 600;
+    color: #333333;
+    padding-left: 10px;
+    text-align: center;
+}
+#adashboard1 table tr td{
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+    padding-left: 10px;
+    text-align: center;
+}
+#adashboard1 h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #6255a5;
+    line-height: 28px;
+    font-family: "Open Sans",sans-serif;
+}
+#adashboard1 .numbers{
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+/*    background-color: aquamarine;*/
+    height: 120px;
+    margin-left: 30px;
+}
+.adashb1 h3{
+    text-align: center;
+}
+.search1{
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+/*    float: right;*/
+/*    margin-right: 50px;*/
+}
+#adash-btn{
+/*    float: right;*/
+    margin-top: 20px;
+    background-color: #6255a5;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 3px;
+}
+#adashboard1 #select{
+    margin-top: 20px;
+/*    margin-right: 280px;*/
+    width: 130px;
+    margin-left: 0;
+}
+.adhead .col-md-4{
+    border: 1px solid #d3d3d3;
+    height: 130px;
+    width: 30%;
+/*    padding: 0 10px;*/
+    margin: 0 10px;
+}
+#adashboard1 table tr:hover{
+    box-shadow: 0 8px 6px -5px #212226;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#########################################
+Buyer Requests Section
+#########################################*/
+/* The Modal (background) */
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  left: 450px;
+  top: 60px;
+  width: 36%; /* Full width */
+  height: 400px; /* Full height */
+  overflow:visible; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+/*  padding-top: 50px;*/
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#myModal1 img{
+    transform: scale(0.25,0.25) translateY(-350px) translateX(385px);
+/*    text-align: center;*/
+    padding:0;
+/*    margin: auto;*/
+}
+#myModal1 h3{
+    
+}
+#myModal1 .col-md-12{
+    width: 40%;
+}
+#myModal1 p{
+/*    background-size: cover;*/
+    transform: translateY(-150px);
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans",sans-serif;
+}
+#myModal1 #namep{
+/*    background-size: cover;*/
+    transform: translateY(-150px);
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Open Sans",sans-serif;
+}
+#myModal1 .container{
+    padding: 0;
+    margin: 0;
+/*    background-color: aquamarine;*/
+}
+#myModal1 .row{
+    padding: 0;
+    margin: 0;
+}
+#myModal1 .content-box-md{
+    background-color: aquamarine;
+    height: 500px;
+}
+#myModal1 h3{
+    padding-top: 0;
+    margin-top: 0;
+    transform: translateY(-170px);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#########################################
+Admin Profile Section
+#########################################*/
+#admin-profile{
+    padding-top: 8%;
+}
+
+#admin-profile h4{
+    font-family: "Open Sans",sans-serif;
+    font-size: 24px;
+    color: #6255a5;
+    line-height: 28px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+#admin-profile table #pn{
+    width: 70px;
+    transform: translateX(-15px);
+}
+#admin-profile table input{
+    width: 470px;
+    transform: translateX(-15px);
+}
+#admin-profile button{
+    width: 100px;
+    transform: scaleX(.94) translateX(-20px);
+    
+}
+#getFile{
+/*    width: 300px;*/
+    transform: scaleX(1.5);
+}
+#admin-p-btn{
+    background: #6255a5;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: "Open sans",sans-serif;
+    margin-left: 13px;
+}
+#admin-profile label{
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+}
+#admin-profile .table{
+        padding: 0;
+    }
+.table2{
+    padding: 0;
+    width: 100%;
+/*    margin: 0;*/
+/*    background-color: aquamarine;*/
+}
+.table2 button{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+/*
+#########################################
+manage Administrator Section
+#########################################*/
+
+#manage-a{
+    padding-top: 8%;
+}
+#manage-a-btn{
+    background: #6255a5;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: "Open sans",sans-serif;
+    transform: translateX(-12px);
+    margin-top: 22px;
+}
+#manage-a table{
+/*    width: 95.5%;*/
+    border-radius: 3px;
+    border: 1px solid #d1d1d1;
+}
+#manage-a table tr{
+    border: 1px solid #d1d1d1;
+    height: 60px;
+}
+#manage-a table tr th{
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    font-weight: 600;
+    color: #333333;
+    padding-left: 10px;
+    text-align: center;
+}
+#manage-a table tr td{
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+    padding-left: 10px;
+    text-align: center;
+}
+#manage-a h3{
+    font-size: 28px;
+    font-weight: 600;
+    color: #6255a5;
+    line-height: 28px;
+    font-family: "Open Sans",sans-serif;
+}
+#manage-a table tr:hover{
+    box-shadow: 0 8px 6px -5px #212226;
+}
+
+
+
+
+
+
+
+
+/*
+#########################################
+member notes front section
+#########################################*/
+
+#member-note-front{
+    padding-top: 8%;
+}
+
+#member-note-front table{
+/*    width: 95.5%;*/
+    border-radius: 3px;
+    border: 1px solid #d1d1d1;
+}
+#member-note-front table tr{
+    border: 1px solid #d1d1d1;
+    height: 60px;
+}
+#member-note-front table tr th{
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    font-weight: 600;
+    color: #333333;
+    padding-left: 10px;
+    text-align: center;
+}
+#member-note-front table tr td{
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+    padding-left: 10px;
+    text-align: center;
+}
+#member-note-front h3{
+    font-size: 28px;
+    font-weight: 600;
+    color: #6255a5;
+    line-height: 28px;
+    font-family: "Open Sans",sans-serif;
+}
+#member-note-front table tr:hover{
+    box-shadow: 0 8px 6px -5px #212226;
+}
+
+
+
+
+
+
+
+/*
+#########################################
+manage Category Section
+#########################################*/
+
+#manage-c{
+    padding-top: 8%;
+}
+#manage-c-btn{
+    background: #6255a5;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: "Open sans",sans-serif;
+    transform: translateX(-12px);
+    margin-top: 22px;
+}
+#manage-c table{
+    width: 95.5%;
+    border-radius: 3px;
+    border: 1px solid #d1d1d1;
+}
+#manage-c table tr{
+    border: 1px solid #d1d1d1;
+    height: 60px;
+}
+#manage-c table tr th{
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    font-weight: 600;
+    color: #333333;
+    padding-left: 10px;
+    text-align: center;
+}
+#manage-c table tr td{
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+    padding-left: 10px;
+    text-align: center;
+}
+#manage-c h3{
+    font-size: 28px;
+    font-weight: 600;
+    color: #6255a5;
+    line-height: 28px;
+    font-family: "Open Sans",sans-serif;
+}
+#manage-c table tr:hover{
+    box-shadow: 0 8px 6px -5px #212226;
+}
+
+
+
+
+
+
+
+
+/*
+#########################################
+manage Country Section
+#########################################*/
+
+#manage-co{
+    padding-top: 8%;
+}
+#manage-co-btn{
+    background: #6255a5;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: "Open sans",sans-serif;
+    transform: translateX(-12px);
+    margin-top: 22px;
+}
+
+#manage-co table{
+    width: 95.5%;
+    border-radius: 3px;
+    border: 1px solid #d1d1d1;
+}
+#manage-co table tr{
+    border: 1px solid #d1d1d1;
+    height: 60px;
+}
+#manage-co table tr th{
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    font-weight: 600;
+    color: #333333;
+    padding-left: 10px;
+    text-align: center;
+}
+#manage-co table tr td{
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+    padding-left: 10px;
+    text-align: center;
+}
+#manage-co h3{
+    font-size: 28px;
+    font-weight: 600;
+    color: #6255a5;
+    line-height: 28px;
+    font-family: "Open Sans",sans-serif;
+}
+#manage-co table tr:hover{
+    box-shadow: 0 8px 6px -5px #212226;
+}
+
+
+
+
+
+
+
+/*
+#########################################
+manage Category Section
+#########################################*/
+
+#manage-t{
+    padding-top: 8%;
+}
+#manage-t-btn{
+    background: #6255a5;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: "Open sans",sans-serif;
+    transform: translateX(-12px);
+    margin-top: 22px;
+}
+#manage-t table{
+    width: 95.5%;
+    border-radius: 3px;
+    border: 1px solid #d1d1d1;
+}
+#manage-t table tr{
+    border: 1px solid #d1d1d1;
+    height: 60px;
+}
+#manage-t table tr th{
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    font-weight: 600;
+    color: #333333;
+    padding-left: 10px;
+    text-align: center;
+}
+#manage-t table tr td{
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+    padding-left: 10px;
+    text-align: center;
+}
+#manage-t h3{
+    font-size: 28px;
+    font-weight: 600;
+    color: #6255a5;
+    line-height: 28px;
+    font-family: "Open Sans",sans-serif;
+}
+#manage-t table tr:hover{
+    box-shadow: 0 8px 6px -5px #212226;
+}
+
+
+
+
+
+
+/*
+#########################################
+Add Category Section
+#########################################*/
+
+#add-c-t{
+/*    width:540px;*/
+    border: 1px solid #d3d3d3;
+    margin-bottom: 15px;
+    transform: translateX(-5px);
+}
+.addcategobtn{
+    transform: translateX(-170px);
+    }
+#addcatego{
+    
+}
+
+
+
+
+
+
+
+/*
+#########################################
+Member-details Section
+#########################################*/
+
+#member-details{
+    padding-top: 100px;
+}
+#member-details p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333333;
+    font-family: "Open Sans",sans-serif;
+}
+#member-details .right-details{
+    padding-left: 15px;
+    color: #6255a5;
+    font-weight: 500;
+}
+#right-border{
+    border-right: 0.5px solid rgba(0,0,0,0.3);
+}
+#member-details h3{
+    font-family: "Open Sans",sans-serif;
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #6255a5;
+    margin-left: 20px;
+}
+#member-details .biju{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+/*    border-bottom: 1px solid #333333;*/
+}
+#member-details .biju img{
+    height:125px;
+    width: 100px;
+}
+#member-details .pdetails{
+/*    padding-right: 10px;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+#member-details table{
+    width: 95.5%;
+    border-radius: 3px;
+    border: 1px solid #d1d1d1;
+    margin-top: 20px;
+}
+#member-details table tr{
+    border: 1px solid #d1d1d1;
+    height: 60px;
+}
+#member-details table tr th{
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    font-weight: 600;
+    color: #333333;
+    padding-left: 10px;
+    text-align: center;
+}
+#member-details table tr td{
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+    padding-left: 10px;
+    text-align: center;
+}
+#member-details h3{
+    font-size: 28px;
+    font-weight: 600;
+    color: #6255a5;
+    line-height: 28px;
+    font-family: "Open Sans",sans-serif;
+}
+#member-details table tr:hover{
+    box-shadow: 0 8px 6px -5px #212226;
+}
+#member-details h5{
+    color: #6255a5;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: "Open Sans",sans-serif;
+}
+#member-details hr{
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+
+/*
+#########################################
+Notes Under Review Section
+#########################################*/
+#notes-under{
+    padding-top: 120px;
+}
+#notes-under h3{
+    font-size: 24px;
+    color: #6255a5;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 600;
+    line-height: 28px;
+} 
+#notes-under #seller{
+    padding: 0;
+}
+#notes-under table td{
+    margin: 0;
+}
+#notes-under table td input{
+    margin: 3px;
+}
+#notes-under #notes-under-btn{
+    color: #fff;
+    background-color: #6255a5;
+    border-radius: 3px;
+    font-weight: 600;
+}
+#notes-under #emj{
+    opacity: 0;
+}
+#notes-under table{
+    width: 100%;
+}
+#notes-under table button{
+    width:80px;
+    height: 35px;
+}
+#notes-under table th{
+    text-align: center;
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+}
+#notes-under #table #tr{
+    border: 1px solid #d1d1d1;
+    height: 30px;
+}
+#notes-under table .dropdown{
+    transform: translateY(-8px);
+}
+#notes-under table td{
+    padding-left: 10px;
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+    padding-left: 10px;
+    text-align: center;
+
+    margin-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+#green-btn{
+    background-color: #28a745;
+    border: none;
+}
+#red-btn{
+    background-color: #ff3636;
+    border: none;
+}
+#grey-btn{
+    background-color: #cccccc;
+    border: none;
+}
+#notes-under input{
+    background-image: url(../images/Dashboard/search.jpg);
+    background-repeat: no-repeat;
+    background-position: 1% 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#########################################
+Add review Popup
+#########################################*/
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

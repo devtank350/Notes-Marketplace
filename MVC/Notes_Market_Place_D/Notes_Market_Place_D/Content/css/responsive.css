@@ -1,0 +1,1548 @@
+.navbar-header{
+    position: relative;
+}
+#mobile-nav-open-btn{
+    font-size: 30px;
+    color: #6255a5;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    /*Hide mobile navigation*/
+    display: none;
+}
+#mobile-nav{
+    /*Bydefault hidden*/
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(255,255,255,0.9);
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+    overflow: hidden;
+}
+#mobile-nav-close-btn{
+    font-family: "Raleway",sans-serif;
+    font-size: 70px;
+    color: #212226;
+    font-weight: 400;
+    cursor: pointer;
+    position: absolute;
+    top: -9px;
+    right: 13px;
+    -webkit-transition: 0.3s;transition: 0.3s;
+}
+#mobile-nav-content{
+    text-align:center;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    top: 10%;
+}
+#mobile-nav ul li{
+    margin-bottom: 20px;
+    
+}
+#mobile-nav a{
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    color: #212226;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline;
+    -webkit-transition: 0.3s;transition: 0.3s;
+}
+#mobile-nav a:hover,#mobile-nav a:focus,#mobile-nav-close-btn:hover,#mobile-nav-close-btn:focus{
+    color: #6255a5;
+    background: none;
+}
+.white-nav-top #mobile-nav ul.nav >li.active > a{
+    color: #6255a5;
+    font-weight: 500;
+}
+
+@media(min-width:1300px){
+    #sell .phimg{
+    width: 100%;
+    }
+     #sell .pp{
+    width: 50%;
+    }
+    #manage-a #rightflow input{
+        transform: translateX(20px);
+    }
+    #header-d ul a{
+        transform: translateX(45px);
+    }
+    
+}
+
+
+
+@media(max-width:1299.98px){
+    .table-responsive-xl{
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+    
+}
+
+@media(min-width:1300px){
+    
+    #home3 .col-md-6{
+        width:900px;
+}
+    #sell .phimg{
+    width: 100%;
+    }
+     #sell .pp{
+    width: 50%;
+    }
+    #adashboard1{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #manage-a #rightflow input{
+        transform: translateX(20px);
+    }
+    #header-d #setting{
+        margin-right: 50px;
+/*        padding-right: 10px;*/
+    }
+    footer .ftwo{
+        transform: translateY(-5px);
+    }
+    #member-note-front{
+        padding-left: 120px;
+    }
+    #member-note-front #rightflow{
+        transform: translateX(0px);
+    }
+    .breqs{
+/*        transform: translateX(-15px);*/
+        margin-right: 15px;
+    }
+    .nd-2 .c1{
+        transform: translateX(0);
+    }
+}
+
+
+
+/*Large Devices(Desktop & Laptop)*/
+@media(min-width:1200px) and (max-width:1299px){
+    
+    #home #bg-text{
+    padding-top: 40%;
+    padding-left: 5%;
+}
+    header ul{
+/*        margin-right: -40px;*/
+/*        padding-right: 60px;*/
+    }
+    #header-d #header-d-imglogo{
+        transform: translateX(-30px) translateY(40px);
+    }
+    
+    
+    
+    #header ul{
+        transform: translateX(-40px);
+    }
+    footer .ftwo{
+        transform: translateY(-5px);
+    }
+    
+    
+    
+    #home3 .customers{
+        width: 100%;
+    }
+    #home3 .col-md-6{
+    margin: 2%;
+    transform: translateX(25px);
+    }
+    #home2 .horizontal-heading{
+        transform: translateX(-30px);
+    }
+    .rig{
+        padding-right: 60px;
+    }
+    .imagepase{
+        margin-right: 0px;
+    }
+    #dashboard1{
+        margin-right: 20px;
+        margin-left: 30px;
+    }
+
+    #sell .phimg{
+    width: 100%;
+    }
+     #sell .pp{
+    width: 50%;
+    }
+    #download #rightflow{
+/*        margin-right: 10px;*/
+    }
+    #download{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    #contact{
+        margin-right: 20px;
+/*        padding-right: 20px;*/
+        margin-left: 10px;
+    }
+    #adashboard1 #news{
+        
+    }
+    #adashboard1 .adhead{
+        margin: auto;
+        padding-right: 10px;
+        
+    }
+    #adashboard1{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #manage-a #rightflow input{
+        transform: translateX(-300px);
+    }
+    #manage-c .typesearch input{
+        transform: translateY(0px) translateX(20px);
+    }
+    #manage-co #manage-co-btn{
+        transform: translateY(0px);
+    }
+/*
+    #manage-a .manaadmi input{
+        transform: translateX(-1160px);
+    }
+    #manage-a .manaadmi button{
+        transform: translateX(-320px);
+    }
+    
+*/
+    #manage-a .manaadmi button{
+        transform: translateX(-410px);
+    }
+    #manage-a{
+        padding-left: 200px;
+    }
+    #manage-t-btn{
+        transform: translateX(5px);
+    }
+    #user-s .bgtext{
+        transform: translateY(40px);
+    }
+    #search1 #bg-text{
+        transform: translateY(80px);
+    }
+    #member-note-front #rightflow{
+        transform: translateX(0px);
+    }
+    .breqs{
+        margin-right: 15px;
+    }
+    .forgot a{
+        font-size: 14px;
+        transform: translateX(10px);
+    }
+    
+    
+}
+
+
+
+
+
+/*medium Devices(landscape tablets & medium desktop)*/
+@media(min-width:992px) and (max-width:1199px){
+    
+    #header-d #header-d-imglogo{
+/*        transform: translateX(-30px) translateY(40px);
+        */
+        margin: auto;
+        text-align: center;
+        transform: translateX(-50px) translateY(5px);
+    }    
+    #header-d ul i{
+        
+    }
+    header ul{
+        padding-right: 0;
+        margin-right: 0;
+        transform: translateX(00px) translateY(20px);
+        margin-top: 20px;
+/*        padding-left: 10px;*/
+/*        letter-spacing: 20px;*/
+    }
+    header img{
+        transform: translateX(-55px);
+    }
+    #header ul{
+        transform: translateX(-20px) translateY(10px);
+/*        padding-right: 10px;*/
+/*        overflow-x: auto;*/
+    }
+    .dropdown #header-img{
+        transform: translateY(-15px);
+    }
+    footer .ftwo{
+        transform: translateY(-5px);
+    }
+    
+    
+    
+    
+    
+    
+    #home2 #about-right{
+/*        margin-right: 40px;*/
+        padding-left: 50px;
+    }
+    .upper #sellertext{
+        margin-bottom: 39px;
+    }
+    .upper img{
+        transform: translateX(-15px);
+    }
+    #home3 .col-md-6{
+    margin: 1%;
+    transform: translateX(-50px);
+    }
+    .ch{
+        margin-top: 30px;
+    }
+    #dashboard1{
+        margin-right: 20px;
+        margin-left: 30px;
+        padding-top: 150px;
+    }
+    #dashboard1 #myearningg{
+        transform: translateY(-20px);
+        border: none;
+    }
+    #rightflow{
+        margin-right: 40px;
+    }
+    #dash-btn1{
+        transform: translateX(-20px);
+    }
+    #basic-nd .pp{
+        width: 98%;
+/*        padding: 0;*/
+    }
+    #sell .pp{
+    width: 50%;
+}
+    #sell .phimg{
+    width: 100%;
+    }
+    #download{
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 150px;
+    }
+    #contact{
+        margin-right: 20px;
+/*        padding-right: 20px;*/
+        margin-left: 10px;
+    }
+    #adashboard1{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #news{
+        padding-right: 50px;
+    }
+    #news input{
+        width: 170px;
+    }
+/*
+    #manage-a{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+*/
+    #manage-a #rightflow{
+        transform: translateX(120px);
+    }
+    #manage-c h3{
+        transform: translateY(60px);
+    }
+    #manage-c-btn{
+        transform: translateY(53px) translateX(-10px);
+    }
+    #manage-t-btn{
+        transform: translateY(53px) translateX(0px);
+    }
+    #manage-a #manage-a-btn{
+        transform: translateY(50px);
+    }
+    #manage-a h3{
+        transform: translateY(50px);
+    }
+    #manage-a #rightflow{
+/*        transform: translateX(20px);*/
+    }
+    #manage-co #manage-co-btn{
+        transform: translateY(50px);
+    }
+    #manage-co h3{
+        transform: translateY(50px);
+    }
+    .manage-configuration{
+        padding-top: 2px;
+/*        margin-top: 200px;*/
+    }
+    #manage-t h3{
+        transform: translateY(50px);
+    }
+    #admin-profile{
+        padding-top: 130px;
+    }
+    #manage-a .manaadmi input{
+        transform: translateX(-160px);
+    }
+    #manage-a .manaadmi button{
+        transform: translateX(-220px);
+    }
+    #manage-a{
+        padding-left: 150px;
+    }
+    #user-s .bgtext{
+        transform: translateY(40px);
+    }
+    #search1 #bg-text{
+        transform: translateY(60px);
+    }
+    #search1 #books img{
+        transform: scale(0.8,0.8) translateX(-40px);
+    }
+    #member-note-front h3{
+        transform: translateY(55px);
+    }
+    #member-note-front #rightflow{
+        transform: translateX(155px);
+    }
+    #faq h1{
+        transform: translateY(50px);
+    }
+    .breqs{
+        margin-right: 20px;
+    }
+    #dash2earn{
+        transform: translateY(-15px);
+    }
+    .forgot a{
+        float: none;
+/*        font-size: 12px;*/
+        transform: translateX(-10px);
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .navuforgot{
+        padding-left: 0;
+    }
+    #login-page .actual-form {
+        width: 50%;
+    }
+    .actual-signup-form{
+        width: 45%;
+    }
+    #notes .ch{
+/*        background-color: aquamarine;*/
+        padding-left: 20px;
+    }
+    #nd-btn{
+        transform: translateY(30px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*small Devices(portrait tablets & small desktop)*/
+@media(min-width:768px) and (max-width:991px){
+    
+     #header-d #header-d-imglogo{
+/*        transform: translateX(-30px) translateY(40px);
+        */
+        margin: auto;
+        text-align: center;
+        transform: translateX(-50px) translateY(5px);
+    }    
+    #header-d ul i{
+        padding: 0;
+        margin: 0;
+    }
+    header ul{
+        
+    }
+    #header-d .container ul{
+/*        background-color: aquamarine;*/
+        width: 800px;
+        
+        padding-right: 0;
+        margin-right: 0;
+        transform: translateX(125px) translateY(10px);
+        margin-top: 20px;
+    }
+    
+    #header ul{
+        transform: translateY(10px) translateX(-35px);
+/*        margin-right: 10px;*/
+    }
+     header img{
+        transform: translateX(-80px);
+    }
+    header ul{
+/*        transform: translateX(-50px);*/
+    }
+    #header-d li a{
+    font-size: 9px;
+/*    transform: translateY(30px);*/
+    }
+    ul.navbar-nav >li a{
+    font-size: 9px;
+    padding: 10px;
+    }
+    #header-btn{
+        transform: scale(0.7,0.7),translateY(-10px);
+    }
+    .dropdown #header-img{
+        transform: translateY(-20px);
+    }
+    footer .ftwo{
+        transform: translateY(25px);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #signup-form h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 28px;
+    line-height: 32px;
+    }
+    #home2 .horizontal-heading{
+        margin-bottom: 40px;
+    }
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .upper img{
+        transform: translateX(230px);
+        margin-top: 20px;
+    }
+    footer a{
+        transform: translateY(-30px);
+    }
+    #forgot-password-form h3{
+        font-size: 28px;
+        line-height: 32px;
+    }
+    #change-password-form h3{
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .phimg{
+        width: 100%;
+    }
+    #pn{
+/*        width: 16%;*/
+    }
+    .customers{
+        transform: translateX(-160px);
+    }
+    #books{
+        border: none;
+    }
+    .c2 .row{
+        border: none;
+        box-shadow: none;
+    }
+/*
+    .s1 .s2{
+        padding-left: 15px;
+    }
+*/    
+    .numbers{
+        margin-top: 10px;
+    }
+    #dashboard1{
+        padding-top: 150px;
+        margin-left: 20px;
+        margin-right: 14px;
+    }
+    #rightflow{
+        margin-right: 85px;
+    }
+    #dash-btn1{
+        transform: translateX(-40px);
+    }
+    #download{
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 150px;
+    }
+    #download #rjnotes{
+        font-size: 23.1px;
+        line-height: 25px;
+    }
+    #faq .two{
+        width: 96%;
+    }
+    #contact{
+        margin-right: 20px;
+/*        padding-right: 20px;*/
+        margin-left: 10px;
+    }
+    #member-details #right-border{
+        border: none;
+    }
+    #member-details img{
+        text-align:center;
+        margin: 20px auto;
+    }
+    #member-details p{
+        margin: auto;
+    }
+    #adashboard1{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #news{
+        padding-right: 20px;
+/*        background-color: aquamarine;*/
+    }
+    #news div{
+/*        background-color:aquamarine;*/
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    #adashboard1 #news #select{
+        transform: translateY(120px);
+        width: 240px;
+    }
+    #adashboard1 #news input{
+         width: 240px;
+    }
+    #news #adash-btn{
+        transform: translateY(100px);
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    #adashboard1 .adhead {
+        margin-right: 0;
+        padding-right: 0;
+    }
+    #manage-a #rightflow input{
+        transform: translateY(0px);
+        width: 160px;
+    }
+    #manage-a #rightflow button{
+        transform: translateY(0px) translateX(35px);
+    }
+    #manage-a #manage-a-btn{
+        transform: translateY(50px) translateX(0px);
+    }
+    #manage-a h3{
+        transform: translateY(50px);
+    }
+    #manage-c h3{
+        transform: translateY(57px);
+    }
+    #manage-c-btn{
+        transform: translateY(50px) translateX(-10px);
+    }
+    #manage-t-btn{
+        transform: translateY(53px) translateX(0px);
+    }
+    #manage-co #manage-co-btn{
+        transform: translateY(50px);
+    }
+    #manage-co h3{
+        transform: translateY(50px);
+    }
+    #manage-t h3{
+        transform: translateY(50px);
+    }
+    #admin-profile{
+        padding-top: 130px;
+    }
+    #notes-under .searchnbtn button {
+        transform: translateX(-28px);
+    }
+    #user-s .bgtext{
+        transform: translateY(40px);
+    }
+    #search1 #bg-text{
+        transform: translateY(80px);
+    }
+    #mysoldnotes h3{
+        transform: translateY(10px);
+    }
+    .mysoldnotessearch input{
+        transform: translateX(-60px) translateY(20px);
+    }
+    .mysoldnotessearch button{
+        transform: translateX(-60px) translateY(-10px);
+/*        width: 150px;*/
+    }
+    #member-note-front #rightflow input{
+        transform: translateX(-60px) translateY(20px);
+    }
+    #member-note-front #rightflow button{
+        transform: translateX(-60px) translateY(-10px);
+    }
+    #member-note-front h3{
+        transform: translateY(35px);
+    }
+    #faq h1{
+        transform: translateY(80px);
+    }
+    .breqs input{
+        transform: translateX(-60px) translateY(20px);
+    }
+    .breqs button{
+        transform: translateX(-60px) translateY(-10px);
+    }
+    #breq{
+        transform: translateY(20px);
+    }
+    .dash2vada input{
+        transform: translateX(-55px) translateY(20px);
+    }
+    .dash2vada button{
+        transform: translateX(-55px) translateY(-10px);
+    }
+    #inprogress{
+        transform: translateY(30px) translateX(-15px);
+    }
+    .forgot a{
+        float: none;
+/*        font-size: 12px;*/
+        transform: translateX(-10px);
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .navuforgot{
+        padding-left: 0;
+    }
+    #login-page .actual-form {
+        width: 60%;
+    }
+    .actual-forgot-password-form{
+        width: 50%;
+    }
+    .actual-change-password-form{
+        width: 50%;
+    }
+    .actual-signup-form{
+        width: 55%;
+    }
+    #notes .ch{
+/*        background-color: aquamarine;*/
+        padding-left: 20px;
+        margin-top: 30px;
+    }
+    #notes{
+        padding-top: 130px;
+    }
+    .nd-2 .c1{
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+/*Extra small Devices(portrait tablets & landscape phones)*/
+@media(max-width:767px){
+    #mobile-nav-open-btn{
+        display: block;
+/*        margin-right: 10px;*/
+        transform: translateX(-50px) translateY(8px);
+    }
+    #header-d{
+/*        box-shadow: none;*/
+        padding-bottom: 30px;
+    }
+    #user-s{
+        padding-top: 40px;
+    }
+    footer a{
+        transform: translateY(-40px) translateX(00px);
+        padding: 0px;
+    }
+    #header #imglogo{
+        transform: translateX(-80px);
+    }
+    #header #mobile-nav-open-btn{
+        transform: translateX(70px);
+    }
+    footer .admintwo p{
+        text-align: center;
+    }
+    footer .adminone p{
+        text-align: center;
+    }
+    
+    
+    
+    
+    #home2 .horizontal-heading{
+        margin-bottom: 40px;
+    }
+    .forgot a{
+        float: left;
+    }
+    #signup-form h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    }
+    #forgot-password-form h3{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    #change-password-form h3{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .phimg{
+        width: 100%;
+    }
+    #pn{
+/*        width: 10%;*/
+    }
+    
+    
+/*
+    header img{
+        margin-left: 0;
+        padding-left: 0;
+        transform: translateX(-40px;)
+    }
+    .upper img{
+        transform: translateX(160%);
+        margin-top: 20px;
+    }
+*/
+    .c2 #books{
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    .c2 #books p{
+/*        transform: translateX(50px);*/
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .subp{
+        margin-left: 32%;
+    }
+    .rig p{
+        line-height: 32px;
+        font-size: 20px;
+    }
+    .numbers{
+        margin-top: 10px;
+    }
+    #dashboard1{
+        padding-top: 150px;
+    }
+    #rightflow{
+        margin-right: 95px;
+    }
+    .search1{
+        width: 150px;
+    }
+    #dash-btn1{
+        transform: translateX(-75px);
+    }
+    #dashboard1 .col-md-12 .col-md-4 h3{
+        font-size: 19px;
+        line-height: 22px;
+        transform: translateY(10px);
+    }
+    #download{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #download table td,th{
+        font-size: 9px;
+        line-height: 11px;
+    }
+    #download h3{
+        font-size: 22px;
+        line-height: 24px;
+        transform: translateY(58px);
+        
+    }
+    #download #rjnotes{
+        transform: translateY(10px);
+    }
+    #download #breq{
+        transform: translateY(10px);
+    }
+    #faq .two{
+        width: 95%;
+    }
+    #contact{
+        margin-right: 20px;
+/*        padding-right: 20px;*/
+        margin-left: 10px;
+    }
+    #member-details img{
+        margin: 30px auto;
+        min-width: 100px;
+    }
+    #member-details .one{
+        margin: auto;
+        border: none;
+        padding-top: 25px;
+/*        border-top: 1px solid;*/
+    }
+    #member-details .twooo{
+        margin: auto;
+        border: none;
+/*        border-bottom: 1px solid #333333;*/
+    }
+    #member-details .tablediv{
+        margin: 10px;
+    }
+    #adashboard1{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #manage-c h3{
+        transform: translateY(80px);
+    }
+    #manage-c-btn{
+        transform: translateY(70px) translateX(0px);
+    }
+    #manage-c input{
+        transform: translateY(60px) translateX(-50px);
+    }
+    #manage-c #dash-btn{
+        transform: translateY(-15px) translateX(100px);
+    }
+    #manage-c #type{
+        transform: translateY(-10px);
+    }
+    #manage-c .typesearch input{
+        transform: translateY(5px) translateX(20px);
+    }
+    #manage-c .typesearch button{
+        transform: translateY(5px) translateX(-580px);
+    }
+    #manage-t-btn{
+        transform: translateY(30px) translateX(0px);
+    }
+    #manage-t h3{
+        transform: translateY(50px);
+    }
+    #manage-t input{
+        transform: translateX(-50px) translateY(30px);
+    }
+    #manage-t #dash-btn{
+        transform: translateX(120px) translateY(-25px);
+        width: 150px;
+    }
+    #manage-co #manage-co-btn{
+        transform: translateY(40px);
+    }
+    #manage-co h3{
+        transform: translateY(40px);
+    }
+    #manage-co #rightflow input{
+        transform: translateY(30px) translateX(-50px);
+    }
+    #manage-co #rightflow #dash-btn{
+        transform: translate(-50px,-10px);
+        width: 150px;
+    }
+    #search1 #bg-text{
+        transform: translateY(80px);
+    }
+    
+    
+    
+    
+    
+    
+    .searcbtn{
+        transform: translateX(-170px) translateY(20px);
+    }
+    #adashboard1 #news div{
+        padding: 0;
+        text-align: left;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    #adashboard1 #news #select{
+        transform: translateY(-20px);
+        width: 240px;
+    }
+    #adashboard1 #news button{
+        transform: translateY(-25px);
+        width: 120px;
+    }
+    #adashboard1 #news input{
+        width: 240px;
+    }
+    #notes-under .searchnbtn{
+/*        background-color: aquamarine;*/
+        padding-left: 0;
+        padding-top: 0;
+        transform: translateY(-15px);
+    }
+    .searchnbtn label{
+        opacity: 0;
+    }
+    .searchnbtn input{
+        transform: translateX(-10px);
+    }
+    .searchnbtn button{
+        transform: translateX(0px);
+    }
+    #manage-a #manage-a-btn{
+        transform: translateX(2px);
+    }
+    #manage-a #rightflow input{
+        transform: translateX(-50px);
+    }
+    #manage-a #rightflow button{
+        transform: translateX(-50px) translateY(-35px);
+        width: 150px;
+    }
+    #manage-a{
+        padding-top: 100px;
+    }
+    #notes-under #seller{
+        width: 150px;
+    }
+    #notes-under #nounse{
+        transform: translateX(-23px);
+    }
+    #notes-under #notes-under-btn{
+/*        transform: translateX(-350px);*/
+    }
+    #admin-profile{
+        padding-top: 100px;
+    }
+    #notes-under #seller .pnclass{
+        transform: translateY(10px);
+    }
+    #mysoldnotes h3{
+        transform: translateY(10px);
+    }
+    .mysoldnotessearch input{
+        transform: translateX(-50px) translateY(20px);
+    }
+    .mysoldnotessearch button{
+        transform: translateX(-50px) translateY(-10px);
+        width: 150px;
+    }
+    .rjsearchnbtn input{
+        transform: translateX(-50px) translateY(20px);
+    }
+    .rjsearchnbtn button{
+        transform: translateX(-50px) translateY(-10px);
+        width: 150px;
+    }
+    .mydnlds1 input{
+        transform: translateX(-50px) translateY(20px);
+    }
+    .mydnlds1 button{
+        transform: translateX(-50px) translateY(-10px);
+        width: 150px;
+    }
+    .mydnlds h3{
+        padding-bottom: 26px;
+    }
+    #member-note-front #rightflow input{
+        transform: translateX(-50px) translateY(20px);
+    }
+    #member-note-front #rightflow button{
+        transform: translateX(-50px) translateY(-10px);
+    }
+    #member-note-front h3{
+        transform: translateY(35px);
+    }
+    #faq h1{
+        transform: translateY(50px);
+    }
+    .breqs input{
+        transform: translateX(-50px) translateY(20px);
+    }
+    .breqs button{
+        transform: translateX(-50px) translateY(-10px);
+        width: 150px;
+    }
+    .dash2vada input{
+       transform: translateX(-50px) translateY(20px);
+    }
+    .dash2vada button{
+        transform: translateX(-50px) translateY(-10px);
+        width: 150px;
+    }
+    #inprogress{
+        transform: translateY(30px) translateX(-15px);
+    }
+    .forgot a{
+        float: none;
+        font-size: 15px;
+        transform: translateX(-10px);
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .navuforgot{
+        padding-left: 0;
+    }
+    #login-page .actual-form {
+        width: 60%;
+    }
+    .actual-forgot-password-form{
+        width: 70%;
+    }
+    .actual-change-password-form{
+        width: 50%;
+    }
+    .actual-signup-form{
+        width: 75%;
+    }
+    #home3 .col-xs-12{
+        margin: 5px;
+        transform: translateX(-210px);
+        width: 500px;
+    }
+    #home3{
+/*        background-color: aquamarine;*/
+        padding: 0px;
+        margin: 0;
+    }
+    #home2 .upper .imgvalaxs{
+/*        text-align: right;*/
+        background-color: aquamarine;
+    }
+    #home2 .upper .imgvalaxs img{
+        text-align: center;
+/*        transform: translateX(250px);*/
+        margin: auto;
+    }
+    #notes .ch{
+/*        background-color: aquamarine;*/
+        padding-left: 20px;
+        margin-top: 30px;
+    }
+    #notes .ch p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    #notes{
+        padding-top: 130px;
+    }
+    .nd-2 .c1{
+        transform: translateX(0px);
+        height: 150px;
+    }
+    
+    
+}
+@media(max-width:650px){
+    #adashboard1 .adhead p{
+        font-size: 10px;
+        line-height: 14px;
+    }
+    #adashboard1 .adhead div{
+        margin: 3px;
+    }
+    #adashboard1 .adhead{
+/*        background-color: aquamarine;*/
+        margin-left: 30px;
+        
+    }
+    #login-page .actual-form {
+        width: 80%;
+    }
+    .actual-change-password-form{
+        width: 60%;
+    }
+    #home3 .col-xs-12{
+        margin: 5px;
+        transform: translateX(-210px);
+        width: 300px;
+    }
+    .nd-2 .c1 img{
+        position: fixed;
+        transform: scale(0.3,0.4) translateX(-385px) translateY(-50px);
+    }
+}
+
+
+
+
+@media(max-width:550px){
+    footer .fone p{
+        text-align: center;
+    }
+    footer ul{
+        text-align: center;
+        transform: translateY(50px);
+        
+    }
+    footer ul i{
+        transform: translateX(5px);
+    }
+    #notes .ch p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    
+}
+
+
+@media (max-width:535px){
+    #member-details p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    #member-details .one{
+        padding-top: 25px;
+    }
+    #home #bg-text h1{
+        font-size: 28px;
+        line-height: 32px;
+        margin-top: 100px;
+    }
+    #home #bg-text p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+}
+
+
+
+
+@media (max-width:480px){
+    #header .homepageimglogo{
+        
+    }
+    #header-d #header-d-imglogo{
+        transform: translateX(-70px) translateY(15px) scale(0.8,0.8);
+    }
+    #header-d #header-d-imglogoo{
+        transform: translateX(-70px) translateY(15px) scale(0.8,0.8);
+    }
+    #mobile-nav-open-btn{
+        transform: translateX(-10px) translateY(10px);
+    }
+    .mysoldnotessearch{
+        padding-top: 80px;
+    }
+    #mysoldnotes h3{
+        transform: translateY(100px);
+    }
+    .rjsearchnbtn{
+        padding-top: 0px;
+    }
+    #rjnotes{
+        padding-top: 100px;
+    }
+    .mydnlds h3{
+        padding-bottom: 26px;
+        padding-top: 50px;
+    }
+    .member-note-front{
+        padding-top: 50px;
+    }
+    #breq{
+        padding-top: 70px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    #forgot-password-form h3{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    #change-password-form h3{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .phimg{
+        width: 100%;
+    }
+    #download table td,th{
+        font-size: 9px;
+        line-height: 11px;
+    }
+    #download{
+        margin-left: 1px;
+        margin-right: 1px;
+        padding: 0;
+    }
+    #faq .two{
+        width: 93%;
+    }
+    #login-page .actual-form {
+        width: 100%;
+/*        padding: 0;*/
+/*        margin: 0;*/
+    }
+    .actual-forgot-password-form{
+        width: 90%;
+    }
+    .actual-change-password-form{
+        width: 90%;
+    }
+    .actual-signup-form{
+        width: 90%;
+    }
+     #home3 .col-xs-12{
+        margin: 5px;
+        transform: translateX(-280px);
+        width: 300px;
+        
+    }
+    #home3 #cus{
+        font-size: 20px;
+        line-height: 24px;
+        text-align: left;
+        transform:translateX(10px);
+    }
+    #home2 .horizontal-heading h5{
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+    }
+    #home2 #about-right p{
+        font-size: 16px;
+    }
+     .nd-2 .c1 img{
+        position: fixed;
+        transform: scale(0.2,0.3) translateX(-625px) translateY(-50px);
+        margin-right: 20px;
+    }
+    #notes .ndtwo #previewimg{
+        transform: scale(0.7,0.7);
+    }
+    
+
+}
+
+@media (max-width:400px){
+    #books img{
+        transform: scale(0.6,0.6) translateX(0px);
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    #books{
+/*        background-color: aquamarine;*/
+    }
+    #books .subp{
+        text-align: left;
+    }
+    #faq #bg-text{
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 100px;
+    } 
+}
+
+
+@media (max-width:350px){
+#adashboard1 .adhead p{
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+ #adashboard1 #news #select{
+        transform: translateY(-20px);
+        width: 120px;
+    }
+    #adashboard1 #news button{
+        transform: translateY(-35px);
+/*        width: 240px;*/
+    }
+    #adashboard1 #news input{
+        width: 120px;
+    }
+    #userprofilebgt{
+        font-size: 26px;
+    }
+    #basic-p #basic-details{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    #address #address-details{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    #college #college-details{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    #basic-p{
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #address{
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #college{
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+     #home3 .col-xs-12{
+        margin: 5px;
+        transform: translateX(-280px);
+        width: 250px;
+        
+    }
+    #books img{
+        transform: scale(0.6,0.6) translateX(-30px);
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+     .nd-2 .c1 img{
+       opacity: 0;
+    }
+    .nd-2 .c1 h5{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .nd-2 .c1 p{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:300px){
+    #header-d #header-d-imglogo{
+        transform: translateX(-90px) translateY(15px) scale(0.6,0.6);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

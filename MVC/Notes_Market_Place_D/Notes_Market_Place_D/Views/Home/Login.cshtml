@@ -1,0 +1,132 @@
+﻿@model MyApp.Models.Loginusermodel
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--important meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 ,user-scalable=no">
+
+    <!--Title-->
+    <title>Notes Marketplace</title>
+
+    <!--Basic Ceo-->
+    <meta name="description" content="Creative Website Development with html5, css3. jquery &bootstrap frameworks">
+    <meta name="keywords" content="HML5, CSS3, JQuery, Web Development, Responsive Website, Creative Website">
+
+    <!--Facicon-->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="~/Content/css/font-awesome/css/font-awesome.min.css">
+    <!--Bootstap CSS-->
+    <link rel="stylesheet" href="~/Content/css/bootstarp/bootstrap.min.css">
+    <!--Owl-Carousel Css-->
+    <!--    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">-->
+    <!--    <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">-->
+    <!--Responsive-tabs-css-->
+    <!--    <link rel="stylesheet" href="css/responsive-tabs/5.2%20responsive-tabs.min.css.css">-->
+    <!--Magnific _popup css-->
+    <!--    <link rel="stylesheet" href="css/magnific-popup/magnific-popup.min.css.css">-->
+    <!--Animate Css-->
+    <!--    <link rel="stylesheet" href="css/animate/animatee.min.css">-->
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="~/Content/css/style.css">
+    <!--Responsive Css-->
+    <link rel="stylesheet" href="~/Content/css/responsive.css">
+
+</head>
+
+<body>
+    <section id="login-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                    <img src="~/Content/images/pre-login/top-logo.png">
+                </div>
+            </div>
+        </div>
+        <div class="container actual-form">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    @using (Html.BeginForm("Authorize","Home", FormMethod.Post, new { @id = "login-form" }))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <h3 class="text-center">Login</h3>
+                        <p class="text-center" id="below-text">Enter your email address and password to login</p>
+                        <div class="col-md-12 col-sm-12 col-xs-12 form-group login-value">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <!--<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">-->
+                            <span class="required">*</span>
+                            @Html.ValidationMessageFor(model => model.EmailID, "", new { @class = "text-danger", style = "color:red; padding = 0 0 0 35px" })
+                            @Html.EditorFor(model => model.EmailID, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter your Email Address" } })
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 form-group" id="up-incorrect">
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 navupassword">
+                                <label>Password</label>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 navuforgot">
+                                <span class="forgot"><a href="forgot-password.html">Forgot password?</a></span>
+                            </div>
+
+
+                            <!--<input id="password-field" type="password" class="form-control" name="password" value="Password">-->
+
+                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger", style = "color:red; padding = 0 0 0 35px" })
+                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter your Password", @id = "password-field" } })
+                            <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                        </div>
+
+                        <div class="form-group form-check" id="remember-me">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+                            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                        </div>
+
+                        <label>@Html.DisplayFor(model => model.Loginerrormsg)</label>
+
+                        <button type="submit" value="Create" class="btn btn-primary btn-lg btn-block login-btn">LOGIN</button>
+                        <p class="text-center" id="bottom-text">
+                            Don't have an account?
+                            <a href="signup.html">Sign Up</a>
+                        </p>
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!--
+
+
+
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    -->
+    <!--JQuery-->
+    <script src="~/Content/js/jquery.js"></script>
+    <!--Bootstarp JS-->
+    <script src="~/Content/js/bootstrap/bootstrap.min.js"></script>
+    <!--Custom JS-->
+    <script src="~/Content/js/script.js"></script>
+</body>
+
+</html>
