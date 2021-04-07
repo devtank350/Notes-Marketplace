@@ -1391,6 +1391,11 @@
     #books .subp{
         text-align: left;
     }
+    #faq #bg-text{
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 100px;
+    } 
 }
 
 
@@ -1478,7 +1483,11 @@
 
 
 
-
+@media (max-width:300px){
+    #header-d #header-d-imglogo{
+        transform: translateX(-90px) translateY(15px) scale(0.6,0.6);
+    }
+}
 
 
 
