@@ -1,0 +1,372 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--important meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 ,user-scalable=no">
+
+    <!--Title-->
+    <title>Notes Marketplace</title>
+
+    <!--Basic Ceo-->
+    <meta name="description" content="Creative Website Development with html5, css3. jquery &bootstrap frameworks">
+    <meta name="keywords" content="HML5, CSS3, JQuery, Web Development, Responsive Website, Creative Website">
+
+    <!--Facicon-->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="~/Content/css/font-awesome/css/font-awesome.min.css">
+    <!--Bootstap CSS-->
+    <link rel="stylesheet" href="~/Content/css/bootstarp/bootstrap.min.css">
+    <!--Owl-Carousel Css-->
+    <!--    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">-->
+    <!--    <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">-->
+    <!--Responsive-tabs-css-->
+    <!--    <link rel="stylesheet" href="css/responsive-tabs/5.2%20responsive-tabs.min.css.css">-->
+    <!--Magnific _popup css-->
+    <!--    <link rel="stylesheet" href="css/magnific-popup/magnific-popup.min.css.css">-->
+    <!--Animate Css-->
+    <!--    <link rel="stylesheet" href="css/animate/animatee.min.css">-->
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="~/Content/css/style.css">
+    <!--Responsive Css-->
+    <link rel="stylesheet" href="~/Content/css/responsive.css">
+
+</head>
+
+<body>
+    <!--Header-->
+    <header id="header-d">
+        <div class="navbar-header">
+            <!--Mobile Menu OpenButton-->
+            <span id="mobile-nav-open-btn">&#9776;</span>
+            <a class="smooth-scroll navbar-brand1" href="#home">
+                <img src="~/Content/images/pre-login/logo.png" alt="logo" id="header-d-imglogoo">
+            </a>
+        </div>
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="search.html" class="smooth-scroll">Search Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Sell You Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Buyer Requests</a></li>
+                    <li><a href="#team" class="smooth-scroll">FAQs</a></li>
+                    <li>
+                        @*<a href="#contact" class="smooth-scroll">Contact Us</a>*@
+                        @Html.ActionLink("ContactUs", "ContactUs", "Home")
+                    </li>
+                    <li>
+                        <a href="#contact" class="smooth-scroll">
+                            <img src="~/Content/images/Dashboard/user-img.png" class="img-circle" id="header-img">
+                        </a>
+                    </li>
+                    <li><a href="#services" class="smooth-scroll"><button type="button" class="btn btn-primary" id="header-bt">LOGOUT</button></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="mobile-nav">
+            <span id="mobile-nav-close-btn">
+                &times;
+            </span>
+            <div id='mobile-nav-content'>
+                <ul class="nav">
+                    <li><a href="search.html" class="smooth-scroll">Search Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Sell You Notes</a></li>
+                    <li><a href="#team" class="smooth-scroll">FAQs</a></li>
+                    <li><a href="#contact" class="smooth-scroll">Contact Us</a></li>
+                    <li><a href="#services" class="smooth-scroll"><button type="button" class="btn btn-primary search-btn">LOGIN</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="faq-bg-image">
+
+        <div id="faq-content" style="padding-top:100px">
+
+            <div class="container">
+
+                <div class="row text-center background-img-heading-position">
+
+                    <div class="background-img-heading">
+                        <h1>Frequently Asked Question</h1>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Section Background Image END -->
+    <!-- Section FAQS -->
+    <section id="faqs">
+
+        <div class="content-box">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="heading-faqs">
+                        <h3 class="heading-lg">General Questions</h3>
+                    </div>
+                </div>
+
+                <div class="accordion" id="general-question">
+
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h6 class="mb-0">What is Notes Marketplace?</h6>
+                            <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <img class="img-faq" src="~/Content/images/Add-notes/add.png" alt="add">
+                            </a>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#general-question">
+                            <div class="card-body">
+                                <p>Notes Marketplace is an online marketplace for university students to buy and sell their course notes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h6 class="mb-0">Where did Notes Marketplace start?</h6>
+                            <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+                                <img class="img-faq" src="~/Content/images/Add-notes/add.png" alt="add">
+                            </a>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#general-question">
+                            <div class="card-body">
+                                <p>Notes Marketplace is an online marketplace for university students to buy and sell their course notes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="heading-faqs">
+                        <h3 class="heading-lg">Uploaders</h3>
+                    </div>
+                </div>
+
+                <div class="accordion" id="uploaders">
+
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h6 class="mb-0">Why should I upload now?</h6>
+                            <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseOne">
+                                <img class="img-faq" src="~/Content/images/Add-notes/add.png" alt="add">
+                            </a>
+                        </div>
+
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#uploaders">
+                            <div class="card-body">
+                                <p>Notes Marketplace is an online marketplace for university students to buy and sell their course notes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h6 class="mb-0">What can't I sell?</h6>
+                            <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseOne">
+                                <img class="img-faq" src="~/Content/images/Add-notes/add.png" alt="add">
+                            </a>
+                        </div>
+
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#uploaders">
+                            <div class="card-body">
+                                <p>Notes Marketplace is an online marketplace for university students to buy and sell their course notes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h6 class="mb-0">How long does it take to upload?</h6>
+                            <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseOne">
+                                <img class="img-faq" src="~/Content/images/Add-notes/add.png" alt="add">
+                            </a>
+                        </div>
+
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingOne" data-parent="#uploaders">
+                            <div class="card-body">
+                                <p>Notes Marketplace is an online marketplace for university students to buy and sell their course notes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="heading-faqs">
+                        <h3 class="heading-lg">Downloaders</h3>
+                    </div>
+                </div>
+
+                <div class="accordion" id="downloaders">
+
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h6 class="mb-0">How do I buy notes?</h6>
+                            <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseOne">
+                                <img class="img-faq" src="~/Content/images/Add-notes/add.png" alt="add">
+                            </a>
+                        </div>
+
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingOne" data-parent="#downloaders">
+                            <div class="card-body">
+                                <p>Notes Marketplace is an online marketplace for university students to buy and sell their course notes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h6 class="mb-0">Why should I buy notes?</h6>
+                            <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseOne">
+                                <img class="img-faq" src="~/Content/images/Add-notes/add.png" alt="add">
+                            </a>
+                        </div>
+
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingOne" data-parent="#downloaders">
+                            <div class="card-body">
+                                <p>Notes Marketplace is an online marketplace for university students to buy and sell their course notes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h6 class="mb-0">Will downloading notes guarantee I improve my grades?</h6>
+                            <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseOne">
+                                <img class="img-faq" src="~/Content/images/Add-notes/add.png" alt="add">
+                            </a>
+                        </div>
+
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingOne" data-parent="#downloaders">
+                            <div class="card-body">
+                                <p>Notes Marketplace is an online marketplace for university students to buy and sell their course notes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!--    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
+    <hr>
+    <footer>
+
+        <div class="row">
+
+            <div class="col-md-6 col-sm-6 col-xs-12 fone">
+                <p class="">
+                    Copyright <i class="fa fa-copyright"></i> TatvaSoft all Rights Reserved.
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 ftwo">
+                <ul class="social-list">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--JQuery-->
+    <script src="~/Content/js/jquery.js"></script>
+
+    <!--Bootstarp JS-->
+    <script src="~/Content/js/bootstrap/bootstrap.min.js"></script>
+    <!--owl_carousel-JS-->
+
+    <script src="~/Content/js/owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- Waypoints js-->
+    <script src="~/Content/js/way-points/jquery.waypoints.min.js"></script>
+
+    <!--Responsive Tabs js-->
+    <script src="~/Content/js/responsive-tabs/jquery.responsiveTabs.min.js.js"></script>
+
+    <!--Isotope JS-->
+    <script src="~/Content/js/isotope/isotope.pkgd.min.js.js"></script>
+
+    <!--magnific Popup js-->
+    <script src="~/Content/js/magnific-popup/jquery.magnific-popup.min.js.js"></script>
+
+    <!--CounterUp Js-->
+    <script src="~/Content/js/CounterUp/jquery.counterup.min.js"></script>
+
+    <!--Easing Js-->
+    <script src="~/Content/js/easing/7.2%20jquery.easing.1.3.min.js.js"></script>
+
+    <!--WowJS-->
+    <script src='~/Content/js/wow/wow.min.js'></script>
+
+    <!--Custom JS-->
+    <script src="~/Content/js/script.js"></script>
+
+</body>
+
+</html>

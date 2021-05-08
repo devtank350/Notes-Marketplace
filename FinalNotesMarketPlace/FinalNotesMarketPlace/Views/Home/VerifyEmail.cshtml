@@ -1,0 +1,37 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>VerifyEmail</title>
+</head>
+<body>
+    <div>
+        <section id="email-verification">
+            <div id="verify-email">
+                <img src="~/Content/images/pre-login/top-logo.png" alt="logo">
+                <h3>Email Verification</h3>
+                <h6>Dear Smith,</h6>
+                <p>Thanks for Signing up!<br>Simply click below for email verification</p>
+                <div class="btn-email-verify">
+                    @Html.ActionLink("Verify Email Address", "RegistrationConfirm", "Home", new { key = @ViewBag.Key, value = @ViewBag.Value })
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+    function verified() {
+        $.ajax({
+            type: "post",
+            url: "Home/RegistrationConfirm",
+            data: { 'regID': '@ViewBag.regID', 'value': @ViewBag.Value  },
+        })
+    }
+    </script>
+
+</body>
+</html>
