@@ -39,7 +39,7 @@ namespace FinalNotesMarketPlace.Controllers
                 userprofileviewmodel.CountryList = context.Countries.Where(x => x.IsActive == true).ToList();
                 userprofileviewmodel.GenderList = context.ReferenceData.Where(x => x.RefCategory == "Gender" && x.IsActive == true).ToList();
                 userprofileviewmodel.UserID = user.ID;
-                userprofileviewmodel.Email = user.EmailID;
+                userprofileviewmodel.EmailID = user.EmailID;
                 userprofileviewmodel.FirstName = user.FirstName;
                 userprofileviewmodel.LastName = user.LastName;
                 userprofileviewmodel.DOB = userprofile.DOB;
@@ -62,7 +62,7 @@ namespace FinalNotesMarketPlace.Controllers
                 userprofileviewmodel.CountryList = context.Countries.Where(x => x.IsActive == true).ToList();
                 userprofileviewmodel.GenderList = context.ReferenceData.Where(x => x.RefCategory.ToLower() == "gender" && x.IsActive == true).ToList();
                 userprofileviewmodel.UserID = user.ID;
-                userprofileviewmodel.Email = user.EmailID;
+                userprofileviewmodel.EmailID = user.EmailID;
                 userprofileviewmodel.FirstName = user.FirstName;
                 userprofileviewmodel.LastName = user.LastName;
             }

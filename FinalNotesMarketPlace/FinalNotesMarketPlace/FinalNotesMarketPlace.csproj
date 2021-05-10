@@ -51,6 +51,7 @@
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.IO.Compression" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
@@ -193,8 +194,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminProfileController.cs" />
+    <Compile Include="Controllers\BuyerRequestController.cs" />
     <Compile Include="Controllers\DashBoardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SearchNotesController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Countries.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -221,6 +225,8 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\AddNotesViewModel.cs" />
+    <Compile Include="Models\AdminProfileViewModel.cs" />
+    <Compile Include="Models\BuyerRequestViewModel.cs" />
     <Compile Include="Models\ChangePasswordViewModel.cs" />
     <Compile Include="Models\ContactUsViewModel.cs" />
     <Compile Include="Models\DashboardViewModel.cs" />
@@ -229,7 +235,12 @@
     <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\MyDownloadsViewModel.cs" />
     <Compile Include="Models\MySoldNotesViewModel.cs" />
+    <Compile Include="Models\NotesDetailViewModel.cs" />
+    <Compile Include="Models\RejectedNotesViewModel.cs" />
+    <Compile Include="Models\ReviewsViewModel.cs" />
+    <Compile Include="Models\SearchNotesViewModel.cs" />
     <Compile Include="Models\SignUpViewModel.cs" />
+    <Compile Include="Models\SpamReportsViewModel.cs" />
     <Compile Include="Models\UserProfileViewModel.cs" />
     <Compile Include="NoteCategories.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -296,6 +307,17 @@
     <Content Include="Views\Home\FAQs.cshtml" />
     <Content Include="Views\Home\ContactUs.cshtml" />
     <Content Include="Views\DashBoard\Dashboard.cshtml" />
+    <Content Include="Views\User\UserProfile.cshtml" />
+    <Content Include="Views\User\MyDownloads.cshtml" />
+    <Content Include="Views\User\MyRejectedNotes.cshtml" />
+    <Content Include="Views\User\MySoldNotes.cshtml" />
+    <Content Include="Views\DashBoard\AddNotes.cshtml" />
+    <Content Include="Views\DashBoard\EditNotes.cshtml" />
+    <Content Include="Views\BuyerRequest\BuyerRequest.cshtml" />
+    <Content Include="Views\SearchNotes\Search.cshtml" />
+    <Content Include="Views\SearchNotes\Notes.cshtml" />
+    <Content Include="Views\AdminProfile\MyProfile.cshtml" />
+    <Content Include="Views\AdminProfile\SpamReport.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -305,7 +327,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

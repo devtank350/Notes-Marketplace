@@ -1,0 +1,363 @@
+﻿@model FinalNotesMarketPlace.Models.NotesDetailViewModel
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--important meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 ,user-scalable=no">
+
+    <!--Title-->
+    <title>Notes Marketplace</title>
+
+    <!--Basic Ceo-->
+    <meta name="description" content="Creative Website Development with html5, css3. jquery &bootstrap frameworks">
+    <meta name="keywords" content="HML5, CSS3, JQuery, Web Development, Responsive Website, Creative Website">
+
+    <!--Facicon-->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <!--Bootstap CSS-->
+    <link rel="stylesheet" href="css/bootstarp/bootstrap.min.css">
+    <!--Owl-Carousel Css-->
+    <!--    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">-->
+    <!--    <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">-->
+    <!--Responsive-tabs-css-->
+    <!--    <link rel="stylesheet" href="css/responsive-tabs/5.2%20responsive-tabs.min.css.css">-->
+    <!--Magnific _popup css-->
+    <!--    <link rel="stylesheet" href="css/magnific-popup/magnific-popup.min.css.css">-->
+    <!--Animate Css-->
+    <!--    <link rel="stylesheet" href="css/animate/animatee.min.css">-->
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Responsive Css-->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <!--Header-->
+    <header id="header-d">
+        <div class="navbar-header">
+            <!--Mobile Menu OpenButton-->
+            <span id="mobile-nav-open-btn">&#9776;</span>
+            <a class="smooth-scroll navbar-brand1" href="#home">
+                <img src="images/pre-login/logo.png" alt="logo" id="header-d-imglogo">
+            </a>
+        </div>
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="search.html" class="smooth-scroll">Search Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Sell You Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Buyer Requests</a></li>
+                    <li><a href="#team" class="smooth-scroll">FAQs</a></li>
+                    <li><a href="#contact" class="smooth-scroll">Contact Us</a></li>
+                    <li>
+                        <a href="#contact" class="smooth-scroll">
+                            <img src="images/Dashboard/user-img.png" class="img-circle" id="header-img">
+                        </a>
+                    </li>
+                    <li><a href="#services" class="smooth-scroll"><button type="button" class="btn btn-primary" id="header-bt">LOGOUT</button></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="mobile-nav">
+            <span id="mobile-nav-close-btn">
+                &times;
+            </span>
+            <div id='mobile-nav-content'>
+                <ul class="nav">
+                    <li><a href="search.html" class="smooth-scroll">Search Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Sell You Notes</a></li>
+                    <li><a href="#team" class="smooth-scroll">FAQs</a></li>
+                    <li><a href="#contact" class="smooth-scroll">Contact Us</a></li>
+                    <li><a href="#services" class="smooth-scroll"><button type="button" class="btn btn-primary search-btn">LOGIN</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="notes">
+        <div class="content-box-md">
+            <div class="container">
+                <div class="row">
+                    <h2 class="nd">Notes Details</h2>
+                    <div class="col-lg-5 col-md-8 col-sm-12 col-xs-12">
+                        <div class="col-md-4 col-sm-4">
+                            <img src="images/NotesDetails/1.jpg" class="img-responsive">
+                        </div>
+                        <div class="col-md-8 col-sm-8">
+                            <h3>
+                                Computer Science
+                            </h3>
+                            <h5>
+                                Science
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci provident animi repudiandae incidunt! Ea minus modi, totam esse?
+                            </p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" id="nd-btn">DOWNLOAD/ $15</button>
+                            <!-- Button trigger modal -->
+                            <div id="myModal" class="modal" aria-hidden="true">
+
+                                <!-- Modal content -->
+                                <div class="modal-content" aria-hidden="true">
+                                    <span class="close">&times;</span>
+                                    <div class="content-box-md">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <img src="images/NotesDetails/SUCCESS.png" class="text-center">
+                                                    <h3>Thank You for purchasing!</h3>
+                                                    <p id="namep">Dear Smith,</p>
+                                                    <p>
+                                                        A this is paid notes-you need to pay to seller Rahil Shah offline.We will send him an email that you want to download this note.He may contact you further for payment process completion.<br><br>
+                                                        In case,you have urgancy,<br>
+                                                        Please contact us on +918347899121<br><br>
+                                                        Once he receives the payment and acknowlledge us - selected notes you can see over my downloads tab for download.<br><br>
+                                                        have a good day.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 ch">
+                        <div class="col-md-6 col-sm-6 col-xs-6 lef">
+                            <p>
+                                Institutuion:<br>
+                                Country:<br>
+                                Course Name:<br>
+                                Course Code:<br>
+                                Professor:<br>
+                                No. Of Pages:<br>
+                                Aprroved Date:<br>
+                                Rating:
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 rig">
+                            <p>
+                                L.D.C.E<br>
+                                India<br>
+                                Computer<br>
+                                170280<br>
+                                Dr. Ross Geller<br>
+                                216<br>
+                                November 25<br>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                &nbsp;100 Reviews<br>
+                            </p>
+                        </div>
+                        <span>5 Users Marked this note as inappropriate</span>
+                    </div>
+                </div>
+                <br><br>
+                <hr>
+                <div class="row nd-2 ndtwo">
+                    <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                        <h4 class="nd">Notes Preview</h4>
+                        <img src="images/NotesDetails/Screenshot%20(161).png" class="img-responsive" id="previewimg">
+                    </div>
+                    <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 imagepase">
+                        <h4 class="nd">Customer Reviews</h4>
+                        <div class="col-md-12 col-sm-12 col-xs-12 c1">
+                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                <div class="imagemate">
+                                    <img src="images/NotesDetails/team-1.jpg" class="img-responsive imji img-circle">
+                                </div>
+
+                            </div>
+                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                <h5>Monik Geller</h5>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i><br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, sapiente ipsam temporibus!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 c1">
+                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                <div class="imagemate">
+                                    <img src="images/NotesDetails/team-2.jpg" class="img-responsive imji img-circle">
+                                </div>
+
+                            </div>
+                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                <h5>Monik Geller</h5>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i><br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, sapiente ipsam temporibus!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 c1">
+                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                <div class="imagemate">
+                                    <img src="images/NotesDetails/team-3.jpg" class="img-responsive imji img-circle">
+                                </div>
+
+                            </div>
+                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                <h5>Monik Geller</h5>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i><br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, sapiente ipsam temporibus!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    -->
+
+
+    <hr>
+    <footer>
+
+        <div class="row">
+
+            <div class="col-md-6 col-sm-6 col-xs-12 fone">
+                <p class="">
+                    Copyright <i class="fa fa-copyright"></i> TatvaSoft all Rights Reserved.
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 ftwo">
+                <ul class="social-list">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--JQuery-->
+    <script src="js/jquery.js"></script>
+    <!--Bootstarp JS-->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!--Custom JS-->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,439 @@
+﻿@model FinalNotesMarketPlace.Models.UserProfileViewModel
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--important meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 ,user-scalable=no">
+
+    <!--Title-->
+    <title>Notes Marketplace</title>
+
+    <!--Basic Ceo-->
+    <meta name="description" content="Creative Website Development with html5, css3. jquery &bootstrap frameworks">
+    <meta name="keywords" content="HML5, CSS3, JQuery, Web Development, Responsive Website, Creative Website">
+
+    <!--Facicon-->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="Content/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--Bootstap CSS-->
+    <link rel="stylesheet" href="Content/css/bootstarp/bootstrap.min.css">
+    <!--Owl-Carousel Css-->
+    <!--    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">-->
+    <!--    <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">-->
+    <!--Responsive-tabs-css-->
+    <!--    <link rel="stylesheet" href="css/responsive-tabs/5.2%20responsive-tabs.min.css.css">-->
+    <!--Magnific _popup css-->
+    <!--    <link rel="stylesheet" href="css/magnific-popup/magnific-popup.min.css.css">-->
+    <!--Animate Css-->
+    <!--    <link rel="stylesheet" href="css/animate/animatee.min.css">-->
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="Content/css/style.css">
+    <!--Responsive Css-->
+    <link rel="stylesheet" href="Content/css/responsive.css">
+
+</head>
+
+<body>
+    <!--Header-->
+    <header id="header-d">
+        <div class="navbar-header logoclass">
+            <!--Mobile Menu OpenButton-->
+            <span id="mobile-nav-open-btn">&#9776;</span>
+            <a class="smooth-scroll navbar-brand1" href="#home">
+                <img src="Content//pre-login/logo.png" id="header-d-imglogo" alt="logo">
+            </a>
+        </div>
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="search.html" class="smooth-scroll">Search Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Sell You Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Buyer Requests</a></li>
+                    <li><a href="#team" class="smooth-scroll">FAQ</a></li>
+                    <li><a href="#contact" class="smooth-scroll">Contact Us</a></li>
+                    <li>
+                        <a href="#contact" class="smooth-scroll">
+                            <img src="Content/images/Dashboard/user-img.png" class="img-circle" id="header-img">
+                        </a>
+                    </li>
+                    <li><a href="#services" class="smooth-scroll"><button type="button" class="btn btn-primary" id="header-bt">LOGOUT</button></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="mobile-nav">
+            <span id="mobile-nav-close-btn">
+                &times;
+            </span>
+            <div id='mobile-nav-content'>
+                <ul class="nav">
+                    <li><a href="search.html" class="smooth-scroll">Search Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Sell You Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Buyer Requests</a></li>
+                    <li><a href="#team" class="smooth-scroll">FAQ</a></li>
+                    <li><a href="#contact" class="smooth-scroll">Contact Us</a></li>
+                    <li>
+                        <a href="#contact" class="smooth-scroll">
+                            <img src="Content/images/Dashboard/user-img.png" class="img-circle" id="header-img">
+                        </a>
+                    </li>
+                    <li><a href="#services" class="smooth-scroll"><button type="button" class="btn btn-primary" id="header-bt">LOGOUT</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="user-s">
+        <div class="content-box-md">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 bgtext">
+                        <p class="text-center" id="userprofilebgt">User Profile</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @using (Html.BeginForm("Userprofile", "Userprofile", new { id = Model.UserID }, FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(Model => Model.UserID)
+        <div id="basic-p">
+            <p id="basic-details">Basic Profile Details</p>
+            <div class="content-box-md">
+                <div class="container">
+                    
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>First Name</label><span class="required">*</span>
+                                @*<input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Enter Your First Name">*@
+                                @Html.TextBoxFor(model=>model.FirstName,new {@class = "form-control",@value = Model.FirstName,@placeholder = "Enter Your First Name"})
+                                @Html.ValidationMessageFor(model=>model.FirstName,"",new {@class = "form-error",style = "color:red; padding:0px 0px 0px 35px;" })
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>Last Name</label><span class="required">*</span>
+                                @*<input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Enter Your Last Name">*@
+                                @Html.TextBoxFor(model => model.LastName, new { @class = "form-control", @value = Model.LastName, @placeholder = "Enter Your Last Name" })
+                                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "form-error", style = "color:red; padding:0px 0px 0px 35px;" })
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>Email</label><span class="required">*</span>
+                                @*<input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Enter Your Email Address">*@
+                                @Html.TextBoxFor(model => model.EmailID, new { @class = "form-control", @value = Model.EmailID, @placeholder = "Enter Your Email Address" })
+                                @Html.ValidationMessageFor(model => model.EmailID, "", new { @class = "form-error", style = "color:red; padding:0px 0px 0px 35px;" })
+                            </div>
+                        </div>
+                        <div class="col-md-6 dob">
+                            <div class="form-group signup-value input-img">
+                                <label>Date Of Birth</label>
+                                @*<input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Enter Your Date Of Birth">*@
+                                @Html.TextBoxFor(model => model.DOB,"{0:dd/MM/yyyy}",new { @class = "form-control", @value = Model.DOB, })
+                                @Html.ValidationMessageFor(model => model.DOB, "", new { @class = "form-error", style = "color:red; padding:0px 0px 0px 35px;" })
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>Gender</label>
+                                @*<select class="form-control form-control-sm">
+            <option value="" disabled selected hidden>
+                <label id="gender">
+                    Select Your Gender
+                </label>
+            </option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>*@
+                                @Html.DropDownListFor(model => model.Gender, new SelectList(Model.GenderList, "ID", "Value", Model.Gender), "Select Your Gender", new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "form-error" })
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value phone">
+                                <label>Phone Number</label><br>
+                                                           <div class="col-md-2 col-sm-2 col-xs-2">
+                                                               @*<select class="form-control form-control-sm" id="pn">
+            <option value="" disabled selected hidden>+91</option>
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+        </select>*@
+
+                                                               @Html.DropDownListFor(model => model.PhoneNumberCountryCode, new SelectList(Model.CountryList, "CountryCode", "CountryCode", Model.PhoneNumberCountryCode), "Select Your Gender", new { @class = "form-control" })
+                                                               @Html.ValidationMessageFor(model => model.PhoneNumberCountryCode, "", new { @class = "form-error" })
+                                                           </div>
+                                                           <div class="col-md-10 col-sm-10 col-xs-10">
+                                                               @*<input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Enter Your Phone Number">*@
+                                                               @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control", placeholder = "Enter your phone Number" })
+                                                               @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "form-error" })
+                                                           </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12 pp text-left">
+                            <div class="form-group signup-value">
+                                <label>Profile Picture</label><br>
+                                @*<button class="phimg" style="display:block; height:80px;" onclick="document.getElementById('getFile').click()">
+            <img src="images/User-Profile/upload.png"><br>
+            <span>Upload a Picture</span>
+        </button>
+        <input type='file' id="getFile" style="display:none">*@
+                                @Html.TextBoxFor(model => model.ProfilePicture, new { @class = "form-control phimg", id = "getFile", type = "file" })
+                                @Html.ValidationMessageFor(model => model.ProfilePicture, "", new { @class = "form-error", style = "color:red;  padding: 0px 0px 0px 35px;" })
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="address">
+            <p id="address-details">Address Details</p>
+            <div class="content-box-md">
+                <div class="container">
+                    
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>Address Line 1</label><span class="required">*</span>
+                                @*<input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Enter Your Address">*@
+                                @Html.TextBoxFor(model => model.AddressLine1, new { @class = "form-control", placeholder = "Enter your Address", required = "required" })
+                                @Html.ValidationMessageFor(model => model.AddressLine1, "", new { @class = "form-error", style = "color:red;  padding: 0px 0px 0px 35px;" })
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>Address Line 2</label><span class="required">*</span>
+                                @*<input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Enter Your Address">*@
+                                @Html.TextBoxFor(model => model.AddressLine2, new { @class = "form-control", placeholder = "Enter your Address", required = "required" })
+                                @Html.ValidationMessageFor(model => model.AddressLine2, "", new { @class = "form-error", style = "color:red;  padding: 0px 0px 0px 35px;" })
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>City</label><span class="required">*</span>
+                                @*<input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Enter Your City">*@
+                                @Html.TextBoxFor(model => model.City, new { @class = "form-control", placeholder = "Enter your City", required = "required" })
+                                @Html.ValidationMessageFor(model => model.City, "", new { @class = "form-error", style = "color:red;  padding: 0px 0px 0px 35px;" })
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>State</label><span class="required">*</span>
+                                @*<input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Enter Your State">*@
+                                @Html.TextBoxFor(model => model.State, new { @class = "form-control", placeholder = "Enter your State", required = "required" })
+                                @Html.ValidationMessageFor(model => model.State, "", new { @class = "form-error", style = "color:red;  padding: 0px 0px 0px 35px;" })
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>Zip Code</label><span class="required">*</span>
+                                @*<input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Enter Your Zip Code">*@
+                                @Html.TextBoxFor(model => model.ZipCode, new { @class = "form-control", placeholder = "Enter your zipcode", required = "required" })
+                                @Html.ValidationMessageFor(model => model.ZipCode, "", new { @class = "form-error", style = "color:red;  padding: 0px 0px 0px 35px;" })
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>Country</label><span class="required">*</span>
+                                @*<select class="form-control form-control-sm">
+            <option value="" disabled selected hidden>Select Your Country</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>*@
+                                @Html.DropDownListFor(model => model.Country, new SelectList(Model.CountryList, "Name", "Name", Model.Country), "Select your Country", new { @class = "form-control form-control-sm", required = "required" })
+                                @Html.ValidationMessageFor(model => model.Country, "", new { @class = "form-error", style = "color:red;  padding: 0px 0px 0px 35px;" })
+                            </div>
+                        </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div id="college">
+            <p id="college-details">University And College Information</p>
+            <div class="content-box-md">
+                <div class="container">
+                    
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>Univerity</label>
+                                @*<input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Enter Your University">*@
+                                @Html.TextBoxFor(model => model.University, new { @class = "form-control", id = "univer@csity", placeholder = "Enter your university" })
+                                @Html.ValidationMessageFor(model => model.University, "", new { @class = "form-error", style = "color:red;  padding: 0px 0px 0px 35px;" })
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group signup-value">
+                                <label>College</label>
+
+                                @*<input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Enter Your College">*@
+                                @Html.TextBoxFor(model => model.College, new { @class = "form-control", id = "univer@csity", placeholder = "Enter your College" })
+                                @Html.ValidationMessageFor(model => model.College, "", new { @class = "form-error", style = "color:red;  padding: 0px 0px 0px 35px;" })
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary user-submit-btn">SUBMIT</button>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+    </section>
+    <hr>
+    <footer>
+
+        <div class="row">
+
+            <div class="col-md-6 col-sm-6 col-xs-12 fone">
+                <p class="">
+                    Copyright <i class="fa fa-copyright"></i> TatvaSoft all Rights Reserved.
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 ftwo">
+                <ul class="social-list">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    -->
+    <!--JQuery-->
+    <script src="js/jquery.js"></script>
+    <!--Bootstarp JS-->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!--Custom JS-->
+    <script src="js/script.js"></script>
+</body>
+</html>

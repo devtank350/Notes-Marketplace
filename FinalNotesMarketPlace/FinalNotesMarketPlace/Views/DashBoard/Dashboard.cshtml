@@ -97,7 +97,9 @@
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-6" id="rightflow1">
                         <div class="col-md-6 col-sm-6 col-xs-6"></div>
-                        <div class="col-md-6 col-sm-6 col-xs-6"><button type="button" class="btn btn-primary" id="dash-btn1">ADD NOTE</button></div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <button type="button" class="btn btn-primary" id="dash-btn1" onclick="location.href='@Url.Action("AddNotes","DashBoard")'">ADD NOTE</button>
+                        </div>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 dashb1">
                         <div class="col-md-6 col-sm-12 col-xs-12" id="myearn">
@@ -106,25 +108,30 @@
                                 <h3 id="myearningg">My Earning</h3>
                             </div>
                             <div class="col-md-4 col-sm-4 col-xs-4">
-                                <h3>100</h3>
+                                <h3>@Model.NumberOfSoldNotes</h3>
                                 <p>Number Of Notes Sold</p>
                             </div>
                             <div class="col-md-4 col-sm-4 col-xs-4">
-                                <h3>$10,00,000</h3>
+                                @if (Model.MoneyEarned == null) {
+                                <h3>$0</h3>
+                                }
+                                else
+                                {
+                                <h3>$@Model.MoneyEarned</h3>}
                                 <p>Money Earned</p>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
                             <div class="col-md-3 col-sm-3 col-xs-3 numbers">
-                                <h3>38</h3>
+                                <h3>@Model.MyDownloads</h3>
                                 <p>My Downloads</p>
                             </div>
                             <div class="col-md-3 col-sm-3 col-xs-3 numbers">
-                                <h3>12</h3>
+                                <h3>@Model.MyRejectedNotes</h3>
                                 <p>My Rejected Notes</p>
                             </div>
                             <div class="col-md-3 col-sm-3 col-xs-3 numbers">
-                                <h3>103</h3>
+                                <h3>@Model.BuyerRequest</h3>
                                 <p>Buyer Requests</p>
                             </div>
                         </div>
