@@ -1,0 +1,89 @@
+﻿@model IEnumerable<FinalNotesMarketPlace.Models.MembersViewModel>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Members</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JoiningDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnderReviewNotes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PublishedNotes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DownloadedNotes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalExpenses)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalEarning)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JoiningDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnderReviewNotes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublishedNotes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DownloadedNotes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalExpenses)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalEarning)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+                @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

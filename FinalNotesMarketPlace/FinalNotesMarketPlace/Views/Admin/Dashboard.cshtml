@@ -1,0 +1,551 @@
+﻿@model FinalNotesMarketPlace.Models.AdminDashboardViewModel
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--important meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 ,user-scalable=no">
+
+    <!--Title-->
+    <title>Notes Marketplace</title>
+
+    <!--Basic Ceo-->
+    <meta name="description" content="Creative Website Development with html5, css3. jquery &bootstrap frameworks">
+    <meta name="keywords" content="HML5, CSS3, JQuery, Web Development, Responsive Website, Creative Website">
+
+    <!--Facicon-->
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="~/Content/css/font-awesome/css/font-awesome.min.css">
+    <!--Bootstap CSS-->
+    <link rel="stylesheet" href="~/Content/css/bootstarp/bootstrap.min.css">
+    <!--Owl-Carousel Css-->
+    <!--    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">-->
+    <!--    <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">-->
+    <!--Responsive-tabs-css-->
+    <!--    <link rel="stylesheet" href="css/responsive-tabs/5.2%20responsive-tabs.min.css.css">-->
+    <!--Magnific _popup css-->
+    <!--    <link rel="stylesheet" href="css/magnific-popup/magnific-popup.min.css.css">-->
+    <!--Animate Css-->
+    <!--    <link rel="stylesheet" href="css/animate/animatee.min.css">-->
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="~/Content/css/style.css">
+    <!--Responsive Css-->
+    <link rel="stylesheet" href="~/Content/css/responsive.css">
+
+</head>
+<body>
+    <!--Header-->
+    <header id="header-d">
+        <div class="navbar-header">
+            <!--Mobile Menu OpenButton-->
+            <span id="mobile-nav-open-btn">&#9776;</span>
+            <a class="smooth-scroll navbar-brand1" href="#home">
+                <img src="~/Content/images/pre-login/logo.png" alt="logo" id="header-d-imglogoo">
+            </a>
+        </div>
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="search.html" class="smooth-scroll">Dashboard</a></li>
+                    <li><a href="#about" class="smooth-scroll">Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Members</a></li>
+                    <li><a href="#team" class="smooth-scroll">Reports</a></li>
+                    <li><a href="#contact" class="smooth-scroll">Setting</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="~/Content/images/Dashboard/user-img.png" class="img-circle" id="header-img">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Update Profile</a><br>
+                                <a class="dropdown-item" href="#">Change Password</a><br>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#services" class="smooth-scroll"><button type="button" class="btn btn-primary" id="header-bt">LOGOUT</button></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="mobile-nav">
+            <span id="mobile-nav-close-btn">
+                &times;
+            </span>
+            <div id='mobile-nav-content'>
+                <ul class="nav">
+                    <li><a href="search.html" class="smooth-scroll">Dashboard</a></li>
+                    <li><a href="#about" class="smooth-scroll">Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Members</a></li>
+                    <li><a href="#team" class="smooth-scroll">Reports</a></li>
+                    <li><a href="#contact" class="smooth-scroll">Setting</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="~/Content/images/Dashboard/user-img.png" class="img-circle" id="header-img">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">My Profile</a><br>
+                                <a class="dropdown-item" href="#">My Downloads</a><br>
+                                <a class="dropdown-item" href="#">My Sold Notes</a><br>
+                                <a class="dropdown-item" href="#">My Rejected Notes</a><br>
+                                <a class="dropdown-item" href="#">Change Password</a><br>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#services" class="smooth-scroll"><button type="button" class="btn btn-primary" id="header-bt">LOGOUT</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="adashboard1">
+        <div class="content-box-lg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <h4 id="main-t-d">Dashboard</h4>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center adhead">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-3">
+                            <h3>@Model.NotesInReview</h3>
+                            <p>Number of notes in Review for Publish</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-3">
+                            <h3>@Model.NotesDownloaded</h3>
+                            <p>
+                                Number of new notes Downloaded<br>
+                                (Last 7 Days)
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-3">
+                            <h3>@Model.NewRegistration</h3>
+                            <p>
+                                Number of new notes Registration<br>
+                                (Last 7 Days)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <h3>Pubished Notes</h3>
+                    </div>
+
+                    @using (Html.BeginForm("Dashboard", "Admin", FormMethod.Get))
+                    {
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right" id="news">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <input type="text" class="form-control search1" value="@ViewBag.Search" aria-describedby="textHelp" placeholder="Search...">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <button type="submit" class="btn btn-primary" id="adash-btn">SEARCH</button>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                @*<select class="form-control form-control-sm" id="select">
+            <option value="" disabled selected hidden>Select Month</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>*@
+                                @Html.DropDownList("month", new SelectList(@ViewBag.MonthList, "Value", "Text", @ViewBag.Month), new { @class = "form-control", id = "dashboard-month" })
+                            </div>
+                        </div>}
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="overflow-x:auto;">
+                    @*<table class="text-center">
+            <tr>
+                <th>SR NO.</th>
+                <th>TITLE</th>
+                <th>CATEGORY</th>
+                <th>ATTACHMENT SIZE</th>
+                <th>SELL TYPE</th>
+                <th>PRICE</th>
+                <th>PUBLISHER</th>
+                <th>PUBLISHED DATE</th>
+                <th>NUMBER OF<br> DOWNLOADS</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Data Science</td>
+                <td>Science</td>
+                <td>10Kb</td>
+                <td>Free</td>
+                <td>$0</td>
+                <td>Dev Tank</td>
+                <td>09-10-2020,10:10</td>
+                <td>10</td>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ellipsis-v"></i>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Download Notes</a><br>
+                            <a class="dropdown-item" href="#">ViewMore Details</a><br>
+                            <a class="dropdown-item" href="#">Unpublish</a><br>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Account</td>
+                <td>Commerce</td>
+                <td>10Kb</td>
+                <td>Paid</td>
+                <td>$10</td>
+                <td>Purvesh Dodiya</td>
+                <td>09-10-2020,10:10</td>
+                <td>10</td>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ellipsis-v"></i>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Download Notes</a><br>
+                            <a class="dropdown-item" href="#">ViewMore Details</a><br>
+                            <a class="dropdown-item" href="#">Unpublish</a><br>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Social Studies</td>
+                <td>Social</td>
+                <td>10Kb</td>
+                <td>Free</td>
+                <td>$20</td>
+                <td>Satya Vachan</td>
+                <td>09-10-2020,10:10</td>
+                <td>10</td>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ellipsis-v"></i>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Download Notes</a><br>
+                            <a class="dropdown-item" href="#">ViewMore Details</a><br>
+                            <a class="dropdown-item" href="#">Unpublish</a><br>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Data Science</td>
+                <td>Science</td>
+                <td>10Kb</td>
+                <td>Paid</td>
+                <td>$30</td>
+                <td>Dev Tank</td>
+                <td>09-10-2020,10:10</td>
+                <td>10</td>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ellipsis-v"></i>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Download Notes</a><br>
+                            <a class="dropdown-item" href="#">ViewMore Details</a><br>
+                            <a class="dropdown-item" href="#">Unpublish</a><br>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>AI</td>
+                <td>IT</td>
+                <td>10Kb</td>
+                <td>Free</td>
+                <td>$60</td>
+                <td>Dev Tank</td>
+                <td>09-10-2020,10:10</td>
+                <td>10</td>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ellipsis-v"></i>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Download Notes</a><br>
+                            <a class="dropdown-item" href="#">ViewMore Details</a><br>
+                            <a class="dropdown-item" href="#">Unpublish</a><br>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>*@
+
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Sr No.</th>
+                                <th>@Html.ActionLink("Title", "Dashboard", new { sort = ViewBag.Sort == null ? "Title_Desc" : (ViewBag.Sort == "Title_Asc" ? "Title_Desc" : "Title_Asc"), search = ViewBag.Search, seller = ViewBag.Seller, month = ViewBag.Month, page = ViewBag.Page })</th>
+                                <th>@Html.ActionLink("Category", "Dashboard", new { sort = ViewBag.Sort == null ? "Category_Desc" : (ViewBag.Sort == "Category_Asc" ? "Category_Desc" : "Category_Asc"), search = ViewBag.Search, seller = ViewBag.Seller, month = ViewBag.Month, page = ViewBag.Page })</th>
+                                <th class="content-center">@Html.ActionLink("Attachment Size", "Dashboard", new { sort = ViewBag.Sort == null ? "FileSize_Desc" : (ViewBag.Sort == "FileSize_Asc" ? "FileSize_Desc" : "FileSize_Asc"), search = ViewBag.Search, seller = ViewBag.Seller, month = ViewBag.Month, page = ViewBag.Page })</th>
+                                <th class="content-center">@Html.ActionLink("Sell Type", "Dashboard", new { sort = ViewBag.Sort == null ? "SellType_Desc" : (ViewBag.Sort == "SellType_Asc" ? "SellType_Desc" : "SellType_Asc"), search = ViewBag.Search, seller = ViewBag.Seller, month = ViewBag.Month, page = ViewBag.Page })</th>
+                                <th>@Html.ActionLink("Price", "Dashboard", new { sort = ViewBag.Sort == null ? "Price_Desc" : (ViewBag.Sort == "Price_Asc" ? "Price_Desc" : "Price_Asc"), search = ViewBag.Search, seller = ViewBag.Seller, month = ViewBag.Month, page = ViewBag.Page })</th>
+                                <th>@Html.ActionLink("Publisher", "Dashboard", new { sort = ViewBag.Sort == null ? "Publisher_Desc" : (ViewBag.Sort == "Publisher_Asc" ? "Publisher_Desc" : "Publisher_Asc"), search = ViewBag.Search, seller = ViewBag.Seller, month = ViewBag.Month, page = ViewBag.Page })</th>
+                                <th>@Html.ActionLink("Published Date", "Dashboard", new { sort = ViewBag.Sort == null ? "PublishedDate_Desc" : (ViewBag.Sort == "PublishedDate_Asc" ? "PublishedDate_Desc" : "PublishedDate_Asc"), search = ViewBag.Search, seller = ViewBag.Seller, month = ViewBag.Month, page = ViewBag.Page })</th>
+                                <th class="content-center">@Html.ActionLink("Number Of Downloads", "Dashboard", new { sort = ViewBag.Sort == null ? "Downloads_Asc" : (ViewBag.Sort == "Downloads_Desc" ? "Downloads_Asc" : "Downloads_Desc"), search = ViewBag.Search, seller = ViewBag.Seller, month = ViewBag.Month, page = ViewBag.Page })</th>
+                                <th class="content-center"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @if (Model.PublishedNotesLists.Count() == 0)
+                            {
+                <tr class="no-record">
+                    <td colspan="10" class="text-center">No Record Found</td>
+                </tr> }
+                            else
+                            {
+                                var srno = (ViewBag.PageNumber - 1) * 5;
+                                foreach (var item in Model.PublishedNotesLists)
+                                {
+
+                <tr>
+                    @{ srno = srno + 1; }
+                    <td class="table-sr-no">@srno</td>
+                    <td class="table-notes-title"><a href="@Url.Action("NoteDetail", "Admin", new { noteid = @item.ID })">@item.Title</a></td>
+                    <td>@item.Category</td>
+
+                    <td class="content-center">@item.FileSizeKBMB</td>
+
+                    <td class="content-center">@item.SellType</td>
+                    @if (item.SellType.Equals("Paid"))
+                    {
+                <td>$@item.Price</td> }
+                                    else
+                                    {
+                <td>$0</td>}
+
+                    <td>@item.Publisher</td>
+                    <td style="min-width:144px;">@item.PublishedDate.ToString("dd-MM-yyyy hh:mm")</td>
+                    <td class="content-center table-number-link"><a href="@Url.Action("DownloadedNotes", "AdminNotes", new { selectednote = @item.ID })">@item.Downloads</a></td>
+                    <td class="content-center">
+                        <!-- Default dropleft button -->
+                        <div class="btn-group dropleft">
+                            <button type="button" id="dropdownMenu" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="~/images/Dashboard/3dot.png" alt="menu" class="dots">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                <a href="@Url.Action("AdminDownloadNote", "Admin", new { noteid = @item.ID })" class="dropdown-item" role="button">Download Note</a>
+                                <a href="@Url.Action("NoteDetail", "Admin", new { noteid = @item.ID })" class="dropdown-item" role="button">View More Details</a>
+                                <a class="dropdown-item" data-toggle="modal" data-target="#unpublished-@item.ID" role="button">Unpublish</a>
+                            </div>
+                        </div>
+
+                        <!-- Section Spam -->
+                        <div class="modal fade " id="unpublished-@item.ID" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content text-left">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div>
+                                            <h3 class="heading-md">@item.Title</h3>
+                                        </div>
+                                        <div>
+                                            @using (@Html.BeginForm("UnPublishNote", "Admin", FormMethod.Post, new { id = "unpublish-" + @item.ID }))
+                                            {
+                        @Html.AntiForgeryToken()
+
+                                                <input name="noteid" value="@item.ID" hidden>
+
+                                                                        <div class="form-group" id="modal-spam-report">
+                                                                            <label for="unpublish-remark-@item.ID">Remarks *</label>
+                                                                            <textarea class="form-control" name="unpublish-remark" id="unpublish-remark-@item.ID" placeholder="remarks..." required></textarea>
+                                                                        </div>
+                                                                                                <div class="btn-submit">
+                                                                                                    <button class="btn btn-color btn-report" data-toggle="modal" data-target="#confirmation-@item.ID" data-dismiss="modal" aria-label="Close">Unpublish</button>
+                                                                                                    <button class="btn btn-color" data-dismiss="modal" aria-label="Close">Cancel</button>
+                                                                                                </div>}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Section Spam END -->
+                        <!-- Section Confirmation Box -->
+                        <div class="modal fade " id="confirmation-@item.ID" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-confirm-body">
+                                        <div>
+                                            <p class="confirm-text">
+                                                Are you sure you want to Unpublish this note?
+                                            </p>
+
+                                            <div class="btn-confirm">
+                                                <button class="btn btn-yes" onclick="$('#unpublish-'+@item.ID).submit(); $(this).dialog('close');">YES</button>
+                                                <button class="btn btn-no" data-dismiss="modal" aria-label="Close" role="button">NO</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Section Confirmation-Box END -->
+
+                    </td>
+                </tr>}
+                            }
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                    </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center" id="page">
+                    @*<nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
+                <li class="page-item"><a class="page-link" href="#" id="design1">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
+            </ul>
+        </nav>*@
+                    @if (Model.PublishedNotesLists.Count() != 0)
+                    {
+                <div class="row justify-content-center">
+
+                    <nav aria-label="...">
+                        <ul class="pagination flex-wrap">
+
+                            <li class="page-item">
+                                @if (ViewBag.PageNumber == 1)
+                                {
+                <a class="page-link" href="@Url.Action("Dashboard", new { sort = ViewBag.Sort, search = ViewBag.Search, month = ViewBag.Month, page = ViewBag.PageNumber })"><i class="fa fa-angle-left"></i></a> }
+                                else
+                                {
+                <a class="page-link" href="@Url.Action("Dashboard", new { sort = ViewBag.Sort, search = ViewBag.Search, month = ViewBag.Month, page = ViewBag.PageNumber - 1 })"><i class="fa fa-angle-left"></i></a>}
+                            </li>
+
+                            @{ double? TotalPages = ViewBag.TotalPages;
+
+                                                if (ViewBag.PageNumber != 1 && ViewBag.PageNumber - 2 > 1)
+                                                {
+                                                    int page = Convert.ToInt32(@ViewBag.PageNumber) - 3;
+                                <li class="page-item">@Html.ActionLink("1", "Dashboard", new { sort = ViewBag.Sort, search = ViewBag.Search, month = ViewBag.Month, page = 1 }, new { @class = "page-link" })</li> if (page != 1)
+                                                    {
+                                <li class="page-item more-pages-dots">@Html.ActionLink("...", "Dashboard", new { sort = ViewBag.Sort, search = ViewBag.Search, month = ViewBag.Month, page = page }, new { @class = "page-link more-pages-dots" })</li> }
+                                                }
+
+                                                for (int i = 2; i > 0; i--)
+                                                {
+                                                    if (ViewBag.PageNumber - i > 0)
+                                                    {
+                                                        int page = Convert.ToInt32(@ViewBag.PageNumber) - i;
+                                <li class="page-item">@Html.ActionLink(page.ToString(), "Dashboard", new { sort = ViewBag.Sort, search = ViewBag.Search, month = ViewBag.Month, page = page }, new { @class = "page-link" })</li> }
+                                                }
+
+                                <li class="page-item active">
+                                    <a class="page-link">@ViewBag.PageNumber<span class="sr-only">(current)</span></a>
+                                </li> for (int i = 1; i < 3; i++)
+                                                {
+                                                    if (ViewBag.PageNumber + i <= TotalPages)
+                                                    {
+                                                        int page = Convert.ToInt32(@ViewBag.PageNumber) + i;
+                                <li class="page-item">@Html.ActionLink(page.ToString(), "Dashboard", new { sort = ViewBag.Sort, search = ViewBag.Search, month = ViewBag.Month, page = page }, new { @class = "page-link" })</li> }
+                                                }
+
+                                                if (ViewBag.PageNumber != TotalPages && ViewBag.PageNumber + 2 < TotalPages)
+                                                {
+                                                    int page = Convert.ToInt32(@ViewBag.PageNumber) + 3;
+                                                    if (page != TotalPages)
+                                                    {
+                                <li class="page-item">@Html.ActionLink("...", "Dashboard", new { sort = ViewBag.Sort, search = ViewBag.Search, month = ViewBag.Month, page = page }, new { @class = "page-link more-pages-dots" })</li> }
+                                <li class="page-item">@Html.ActionLink(TotalPages.ToString(), "Dashboard", new { sort = ViewBag.Sort, search = ViewBag.Search, month = ViewBag.Month, page = TotalPages }, new { @class = "page-link" })</li> } }
+
+                            <li class="page-item">
+                                @if (ViewBag.PageNumber == ViewBag.TotalPages)
+                                {
+                <a class="page-link" href="@Url.Action("Dashboard", new { sort = ViewBag.Sort, search = ViewBag.Search, month = ViewBag.Month, page = ViewBag.PageNumber })"><i class="fa fa-angle-right"></i></a> }
+                                else
+                                {
+                <a class="page-link" href="@Url.Action("Dashboard", new { sort = ViewBag.Sort, search = ViewBag.Search, month = ViewBag.Month, page = ViewBag.PageNumber + 1 })"><i class="fa fa-angle-right"></i></a>}
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                </div>            }
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!--
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    -->
+
+
+    <hr>
+    <footer>
+
+        <div class="row">
+
+            <div class="col-md-6 col-sm-6 col-xs-12 adminone">
+                <p class="">
+                    Version:1.1.24
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 admintwo">
+                <p class="">
+                    Copyright <i class="fa fa-copyright"></i> TatvaSoft all Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!--JQuery-->
+    <script src="~/Content/js/jquery.js"></script>
+    <!--Bootstarp JS-->
+    <script src="~/Content/js/bootstrap/bootstrap.min.js"></script>
+    <!--Custom JS-->
+    <script src="~/Content/js/script.js"></script>
+</body>
+
+</html>

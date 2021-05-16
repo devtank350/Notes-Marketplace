@@ -1,0 +1,650 @@
+﻿@model IEnumerable<FinalNotesMarketPlace.Models.NotesUnderReviewViewModel>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--important meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 ,user-scalable=no">
+
+    <!--Title-->
+    <title>Notes Marketplace</title>
+
+    <!--Basic Ceo-->
+    <meta name="description" content="Creative Website Development with html5, css3. jquery &bootstrap frameworks">
+    <meta name="keywords" content="HML5, CSS3, JQuery, Web Development, Responsive Website, Creative Website">
+
+    <!--Facicon-->
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
+    <!--Bootstap CSS-->
+    <link rel="stylesheet" href="../css/bootstarp/bootstrap.min.css">
+    <!--Owl-Carousel Css-->
+    <!--    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">-->
+    <!--    <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">-->
+    <!--Responsive-tabs-css-->
+    <!--    <link rel="stylesheet" href="css/responsive-tabs/5.2%20responsive-tabs.min.css.css">-->
+    <!--Magnific _popup css-->
+    <!--    <link rel="stylesheet" href="css/magnific-popup/magnific-popup.min.css.css">-->
+    <!--Animate Css-->
+    <!--    <link rel="stylesheet" href="css/animate/animatee.min.css">-->
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="~/Content/css/style.css">
+    <!--Responsive Css-->
+    <link rel="stylesheet" href="~/Content/css/responsive.css">
+
+</head>
+
+<body>
+    <!--Header-->
+    <header id="header-d">
+        <div class="navbar-header">
+            <!--Mobile Menu OpenButton-->
+            <span id="mobile-nav-open-btn">&#9776;</span>
+            <a class="smooth-scroll navbar-brand1" href="#home">
+                <img src="~/Content/images/pre-login/logo.png" alt="logo" id="header-d-imglogoo">
+            </a>
+        </div>
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="search.html" class="smooth-scroll">Dashboard</a></li>
+                    <li><a href="#about" class="smooth-scroll">Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Members</a></li>
+                    <li><a href="#team" class="smooth-scroll">Reports</a></li>
+                    <li><a href="#contact" class="smooth-scroll">Setting</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="~/Content/images/Dashboard/user-img.png" class="img-circle" id="header-img">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">My Profile</a><br>
+                                <a class="dropdown-item" href="#">My Downloads</a><br>
+                                <a class="dropdown-item" href="#">My Sold Notes</a><br>
+                                <a class="dropdown-item" href="#">My Rejected Notes</a><br>
+                                <a class="dropdown-item" href="#">Change Password</a><br>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#services" class="smooth-scroll"><button type="button" class="btn btn-primary" id="header-bt">LOGOUT</button></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="mobile-nav">
+            <span id="mobile-nav-close-btn">
+                &times;
+            </span>
+            <div id='mobile-nav-content'>
+                <ul class="nav">
+                    <li><a href="search.html" class="smooth-scroll">Dashboard</a></li>
+                    <li><a href="#about" class="smooth-scroll">Notes</a></li>
+                    <li><a href="#about" class="smooth-scroll">Members</a></li>
+                    <li><a href="#team" class="smooth-scroll">Reports</a></li>
+                    <li><a href="#contact" class="smooth-scroll">Setting</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="~/Content/images/Dashboard/user-img.png" class="img-circle" id="header-img">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">My Profile</a><br>
+                                <a class="dropdown-item" href="#">My Downloads</a><br>
+                                <a class="dropdown-item" href="#">My Sold Notes</a><br>
+                                <a class="dropdown-item" href="#">My Rejected Notes</a><br>
+                                <a class="dropdown-item" href="#">Change Password</a><br>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#services" class="smooth-scroll"><button type="button" class="btn btn-primary" id="header-bt">LOGOUT</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="notes-under">
+        <div class="content-box-lg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h3>Notes Under Review</h3>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12" id="seller">
+                                <label>Seller</label>
+                                <select class="form-control form-control-sm" id="pn">
+                                    <option value="" disabled selected hidden>Khyati</option>
+                                    <option>Dev</option>
+                                    <option>Tank</option>
+                                    <option>Virat</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 col-md-5 col-sm-4 col-xs-0"></div>
+                            <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+                                <label id="emj">&nbsp;</label>
+                                <table>
+                                    <tr>
+
+                                        <td>
+                                            <input type="text" class="form-control search1" aria-describedby="textHelp" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search..." id="nounse">
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" id="notes-under-btn">SEARCH</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="overflow-x:auto;">
+                            @*<table id="table">
+            <tr class="text-center" id="tr">
+                <th>SR NO.</th>
+                <th>NOTE TITLE</th>
+                <th>CATEGORY</th>
+                <th>SELLER</th>
+                <th></th>
+                <th>DATE ADDED</th>
+                <th>STATUS</th>
+                <th>ACTIONS</th>
+                <th></th>
+            </tr>
+            <tr id="tr">
+                <td>1</td>
+                <td>Software Development</td>
+                <td>IT</td>
+                <td>Khyati</td>
+                <td>&nbsp;&nbsp;<i class="fa fa-eye"></i>&nbsp;</td>
+                <td>09-10-2020,10:10</td>
+                <td>In Review</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-primary" id="green-btn">Approve</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary" id="red-btn">Reject</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary" id="grey-btn">InReview</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ellipsis-v"></i>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Download Notes</a><br>
+                            <a class="dropdown-item" href="#">View More Details</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr id="tr">
+                <td>2</td>
+                <td>Web Technology</td>
+                <td>IT</td>
+                <td>Khyati</td>
+                <td>&nbsp;&nbsp;<i class="fa fa-eye"></i>&nbsp;</td>
+                <td>10-10-2020,10:10</td>
+                <td>Submitted For Review</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-primary" id="green-btn">Approve</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary" id="red-btn">Reject</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary" id="grey-btn">InReview</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ellipsis-v"></i>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Download Notes</a><br>
+                            <a class="dropdown-item" href="#">View More Details</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr id="tr">
+                <td>3</td>
+                <td>Accounts</td>
+                <td>Commerce</td>
+                <td>Khyati</td>
+                <td>&nbsp;&nbsp;<i class="fa fa-eye"></i>&nbsp;</td>
+                <td>11-10-2020,10:10</td>
+                <td>In Review</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-primary" id="green-btn">Approve</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary" id="red-btn">Reject</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary" id="grey-btn">InReview</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ellipsis-v"></i>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Download Notes</a><br>
+                            <a class="dropdown-item" href="#">View More Details</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr id="tr">
+                <td>4</td>
+                <td>Social Science</td>
+                <td>Social</td>
+                <td>Khyati</td>
+                <td>&nbsp;&nbsp;<i class="fa fa-eye"></i>&nbsp;</td>
+                <td>12-10-2020,10:10</td>
+                <td>In Review</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-primary" id="green-btn">Approve</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary" id="red-btn">Reject</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary" id="grey-btn">InReview</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ellipsis-v"></i>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Download Notes</a><br>
+                            <a class="dropdown-item" href="#">View More Details</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr id="tr">
+                <td>5</td>
+                <td>C#</td>
+                <td>IT</td>
+                <td>Khyati</td>
+                <td>&nbsp;&nbsp;<i class="fa fa-eye"></i>&nbsp;</td>
+                <td>13-10-2020,10:10</td>
+                <td>In Review</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-primary" id="green-btn">Approve</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary" id="red-btn">Reject</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary" id="grey-btn">InReview</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ellipsis-v"></i>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Download Notes</a><br>
+                            <a class="dropdown-item" href="#">View More Details</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>*@
+
+
+                            <table class="table">
+                                <thead>
+                                    <tr class="column-title">
+                                        <th>Sr No.</th>
+                                        <th>@Html.ActionLink("Note Title", "NotesUnderReview", new { member = @ViewBag.Member, sort = ViewBag.Sort == null ? "Title_Desc" : (ViewBag.Sort == "Title_Asc" ? "Title_Desc" : "Title_Asc"), search = ViewBag.Search, seller = ViewBag.Seller, page = ViewBag.PageNumber })</th>
+                                        <th>@Html.ActionLink("Category", "NotesUnderReview", new { member = @ViewBag.Member, sort = ViewBag.Sort == null ? "Category_Desc" : (ViewBag.Sort == "Category_Asc" ? "Category_Desc" : "Category_Asc"), search = ViewBag.Search, seller = ViewBag.Seller, page = ViewBag.PageNumber })</th>
+                                        <th>@Html.ActionLink("Seller", "NotesUnderReview", new { member = @ViewBag.Member, sort = ViewBag.Sort == null ? "Seller_Desc" : (ViewBag.Sort == "Seller_Asc" ? "Seller_Desc" : "Seller_Asc"), search = ViewBag.Search, seller = ViewBag.Seller, page = ViewBag.PageNumber })</th>
+                                        <th class="user-info-eye-column"></th>
+                                        <th class="table-date">@Html.ActionLink("Date Added", "NotesUnderReview", new { member = @ViewBag.Member, sort = ViewBag.Sort == null ? "DateAdded_Desc" : (ViewBag.Sort == "DateAdded_Asc" ? "DateAdded_Desc" : "DateAdded_Asc"), search = ViewBag.Search, seller = ViewBag.Seller, page = ViewBag.PageNumber })</th>
+                                        <th>@Html.ActionLink("Status", "NotesUnderReview", new { member = @ViewBag.Member, sort = ViewBag.Sort == null ? "Status_Desc" : (ViewBag.Sort == "Status_Asc" ? "Status_Desc" : "Status_Asc"), search = ViewBag.Search, seller = ViewBag.Seller, page = ViewBag.PageNumber })</th>
+                                        <th class="content-center action-button">Action</th>
+                                        <th class="content-center"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    @if (Model.Count() == 0)
+                                    {
+                        <tr class="no-record">
+                            <td colspan="9" class="text-center">No Record Found</td>
+                        </tr> }
+                                    else
+                                    {
+                                        var srno = (ViewBag.PageNumber - 1) * 5;
+                                        foreach (var item in Model)
+                                        {
+
+                        <tr>
+                            @{ srno = srno + 1; }
+                            <td class="table-sr-no">@srno</td>
+                            <td class="table-notes-title"><a href="@Url.Action("NoteDetail", "Admin", new { noteid = @item.NoteID })">@item.Title</a></td>
+                            <td>@item.Category</td>
+                            <td class="user-info-eye-link">
+                                @item.Seller
+                            </td>
+                            <td class="user-info-eye-icon">
+                                <a href="@Url.Action("MemberDetail", "AdminMembers", new { member = @item.SellerID })"><img src="~/images/Dashboard/eye.png" class="eye"></a>
+                            </td>
+                            <td>@item.DateAdded.ToString("dd-MM-yyyy, hh:mm")</td>
+                            <td>@item.Status</td>
+                            <td>
+                                <button type="button" class="btn btn-approve" data-toggle="modal" data-target="#approve-@item.NoteID">Approve</button>
+                                <button type="button" class="btn btn-reject" data-toggle="modal" data-target="#reject-@item.NoteID">Reject</button>
+                                @if (String.Equals(item.Status.ToLower(), "submitted for review"))
+                                {
+                        <button type="button" class="btn btn-inreview" data-toggle="modal" data-target="#inreview-@item.NoteID">InReview</button> }
+                                            else
+                                            {
+                        <button type="button" class="btn btn-inreview" disabled>InReview</button>}
+                                <!-- Section Inreview Confirmation Box -->
+                                <div class="modal fade " id="inreview-@item.NoteID" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-confirm-body">
+                                                <div>
+                                                    <p class="confirm-text">
+                                                        Via marking the note In Review – System will let user know that review process has been initiated. Please press yes to continue.
+                                                    </p>
+
+                                                    <div class="btn-confirm">
+                                                        <a class="btn btn-yes" href="@Url.Action("MakeNoteInReview", "AdminNotes", new { id = @item.NoteID })" id="confirmationbutton" role="button">YES</a>
+                                                        <a class="btn btn-no" data-dismiss="modal" aria-label="Close" role="button">NO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Section Inreview Confirmation-Box END -->
+                                <!-- Section Approve Confirmation Box -->
+                                <div class="modal fade " id="approve-@item.NoteID" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-confirm-body">
+                                                <div>
+                                                    <p class="confirm-text">
+                                                        If you approve the notes – System will publish the notes over portal. Please press yes to continue.
+                                                    </p>
+
+                                                    <div class="btn-confirm">
+                                                        <a class="btn btn-yes" href="@Url.Action("MakeNotePublish", "AdminNotes", new { id = @item.NoteID })" id="confirmationbutton" role="button">YES</a>
+                                                        <a class="btn btn-no" data-dismiss="modal" aria-label="Close" role="button">NO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Section Approve Confirmation-Box END -->
+                                <!-- Section Add Remark -->
+                                <div class="modal fade " id="reject-@item.NoteID" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div>
+                                                    <h3 class="heading-md">@item.Title</h3>
+                                                </div>
+                                                <div>
+
+                                                    @using (Html.BeginForm("MakeNoteReject", "AdminNotes", FormMethod.Post, new { id = "makenotereject-" + @item.NoteID }))
+                                                    {
+
+                                <input value="@item.NoteID" name="noteid" hidden>
+
+                                                        <div class="form-group" id="modal-remark">
+                                                            <label for="remark">Remarks *</label>
+                                                            <textarea class="form-control" name="remark" id="remark" placeholder="remark..." required></textarea>
+                                                        </div>
+
+                                                                                <div id="reject-modal-btn">
+                                                                                    <div class="btn-modal-reject">
+                                                                                        <button class="btn" data-toggle="modal" data-target="#confirmation-@item.NoteID" data-dismiss="modal" aria-label="Close">Reject</button>
+                                                                                    </div>
+                                                                                    <div class="btn-modal-cancle">
+                                                                                        <button class="btn" data-dismiss="modal">Cancle</button>
+                                                                                    </div>
+                                                                                </div>}
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Section Add Remark END -->
+                                <!-- Section Confirmation Box -->
+                                <div class="modal fade " id="confirmation-@item.NoteID" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-confirm-body">
+                                                <div>
+                                                    <p class="confirm-text">
+                                                        Are you sure you want to reject seller request?
+                                                    </p>
+
+                                                    <div class="btn-confirm">
+                                                        <button class="btn btn-yes" onclick="$('#makenotereject-'+@item.NoteID).submit(); $(this).dialog('close');">YES</button>
+                                                        <button class="btn btn-no" data-dismiss="modal" aria-label="Close" role="button">NO</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Section Confirmation-Box END -->
+
+                            </td>
+                            <td class="content-center">
+                                <!-- Default dropleft button -->
+                                <div class="btn-group dropleft">
+                                    <button type="button" id="dropdownMenu2" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="~/images/Dashboard/3dot.png" alt="menu" class="dots">
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <a class="dropdown-item" href="@Url.Action("AdminDownloadNote", "Admin", new { noteid = @item.NoteID })" role="button">Download Note</a>
+                                        <a class="dropdown-item" href="@Url.Action("NoteDetail", "Admin", new { noteid = @item.NoteID })" role="button">View More Details</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>}
+                                    }
+
+                                </tbody>
+                            </table>
+
+
+
+                        </div>
+                        <div class="col-md-12 col-md-12 col-sm-12 col-xs-12 text-center" id="page">
+                            @*<nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
+                <li class="page-item"><a class="page-link" href="#" id="design1">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
+            </ul>
+        </nav>*@
+
+                            @if (Model.Count() != 0)
+                            {
+                        <div class="row justify-content-center">
+
+                            <nav aria-label="...">
+                                <ul class="pagination flex-wrap">
+
+                                    <li class="page-item">
+                                        @if (ViewBag.PageNumber == 1)
+                                        {
+                        <a class="page-link" href="@Url.Action("NotesUnderReview", new { member = @ViewBag.Member, sort = ViewBag.Sort, search = @ViewBag.Search, seller = ViewBag.Seller, page = @ViewBag.PageNumber })"><i class="fa fa-angle-left"></i></a> }
+                                        else
+                                        {
+                        <a class="page-link" href="@Url.Action("NotesUnderReview", new { member = @ViewBag.Member, sort = ViewBag.Sort, search = @ViewBag.Search, seller = ViewBag.Seller, page = @ViewBag.PageNumber - 1 })"><i class="fa fa-angle-left"></i></a>}
+                                    </li>
+
+                                    @{ double? TotalPages = ViewBag.TotalPages;
+
+                                                        if (ViewBag.PageNumber != 1 && ViewBag.PageNumber - 2 > 1)
+                                                        {
+                                                            int page = Convert.ToInt32(@ViewBag.PageNumber) - 3;
+                                        <li class="page-item">@Html.ActionLink("1", "NotesUnderReview", new { member = @ViewBag.Member, sort = @ViewBag.Sort, search = @ViewBag.Search, seller = ViewBag.Seller, page = 1 }, new { @class = "page-link" })</li> if (page != 1)
+                                                            {
+                                        <li class="page-item more-pages-dots">@Html.ActionLink("...", "NotesUnderReview", new { member = @ViewBag.Member, sort = @ViewBag.Sort, search = @ViewBag.Search, seller = ViewBag.Seller, page = page }, new { @class = "page-link more-pages-dots" })</li> }
+                                                        }
+
+                                                        for (int i = 2; i > 0; i--)
+                                                        {
+                                                            if (ViewBag.PageNumber - i > 0)
+                                                            {
+                                                                int page = Convert.ToInt32(@ViewBag.PageNumber) - i;
+                                        <li class="page-item">@Html.ActionLink(page.ToString(), "NotesUnderReview", new { member = @ViewBag.Member, sort = @ViewBag.Sort, search = @ViewBag.Search, seller = ViewBag.Seller, page = page }, new { @class = "page-link" })</li> }
+                                                        }
+
+                                        <li class="page-item active">
+                                            <a class="page-link">@ViewBag.PageNumber<span class="sr-only">(current)</span></a>
+                                        </li> for (int i = 1; i < 3; i++)
+                                                        {
+                                                            if (ViewBag.PageNumber + i <= TotalPages)
+                                                            {
+                                                                int page = Convert.ToInt32(@ViewBag.PageNumber) + i;
+                                        <li class="page-item">@Html.ActionLink(page.ToString(), "NotesUnderReview", new { member = @ViewBag.Member, sort = @ViewBag.Sort, search = @ViewBag.Search, seller = ViewBag.Seller, page = page }, new { @class = "page-link" })</li> }
+                                                        }
+
+                                                        if (ViewBag.PageNumber != TotalPages && ViewBag.PageNumber + 2 < TotalPages)
+                                                        {
+                                                            int page = Convert.ToInt32(@ViewBag.PageNumber) + 3;
+                                                            if (page != TotalPages)
+                                                            {
+                                        <li class="page-item">@Html.ActionLink("...", "NotesUnderReview", new { member = @ViewBag.Member, sort = @ViewBag.Sort, search = @ViewBag.Search, seller = ViewBag.Seller, page = page }, new { @class = "page-link more-pages-dots" })</li> }
+                                        <li class="page-item">@Html.ActionLink(TotalPages.ToString(), "NotesUnderReview", new { member = @ViewBag.Member, sort = @ViewBag.Sort, search = @ViewBag.Search, seller = ViewBag.Seller, page = TotalPages }, new { @class = "page-link" })</li> } }
+
+                                    <li class="page-item">
+                                        @if (ViewBag.PageNumber == ViewBag.TotalPages)
+                                        {
+                        <a class="page-link" href="@Url.Action("NotesUnderReview", new { member = @ViewBag.Member, sort = ViewBag.Sort, search = @ViewBag.Search, seller = ViewBag.Seller, page = @ViewBag.PageNumber })"><i class="fa fa-angle-right"></i></a> }
+                                        else
+                                        {
+                        <a class="page-link" href="@Url.Action("NotesUnderReview", new { member = @ViewBag.Member, sort = ViewBag.Sort, search = @ViewBag.Search, seller = ViewBag.Seller, page = @ViewBag.PageNumber + 1 })"><i class="fa fa-angle-right"></i></a>}
+                                    </li>
+
+                                </ul>
+                            </nav>
+
+                        </div>            }
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!--
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    -->
+
+
+    <hr>
+    <footer>
+
+        <div class="row">
+
+            <div class="col-md-6 col-sm-6 col-xs-12 adminone">
+                <p class="">
+                    Version:1.1.24
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 admintwo">
+                <p class="">
+                    Copyright <i class="fa fa-copyright"></i> TatvaSoft all Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!--JQuery-->
+    <script src="~/Content/js/jquery.js"></script>
+    <!--Bootstarp JS-->
+    <script src="~/Content/js/bootstrap/bootstrap.min.js"></script>
+    <!--Custom JS-->
+    <script src="~/Content/js/script.js"></script>
+</body>
+
+</html>
