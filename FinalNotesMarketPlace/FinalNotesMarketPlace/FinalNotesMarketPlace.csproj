@@ -329,6 +329,12 @@
     <Content Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <Content Include="EmailTemplate\Contactus.cshtml" />
+    <Content Include="EmailTemplate\PublishNote.cshtml" />
+    <Content Include="EmailTemplate\RequestPaidNotes.cshtml" />
+    <Content Include="EmailTemplate\UnpublishNote.cshtml" />
+    <Content Include="EmailTemplate\SellerAllowDownloadTemplate.cshtml" />
+    <Content Include="EmailTemplate\SpamReport.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Signup.cshtml" />
